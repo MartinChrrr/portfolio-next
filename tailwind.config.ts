@@ -5,6 +5,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ["var(--font-caption)"],
+        mono: ["var(--font-geist-mono)"],
+        'caption':["var(--font-caption)" ],
         anekTelugu: ["Anek Telugu", "sans-serif"],
       },
     },

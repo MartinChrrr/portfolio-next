@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${GeistSans.variable} ${anekTelugu.className} font-sans h-full bg-background text-foreground`}
+      <body className={`${GeistSans.variable} ${anekTelugu.variable} font-sans h-full bg-background text-foreground`}
       >
         <div className="h-full"> {children}</div>
         {/* {children} */}
