@@ -21,7 +21,7 @@ export const Header = () => {
                         </li>
                         <li>
                             <Link className={`${buttonVariants({ variant: "outline", size:"icon" })}  p-0 mx-1`}    
-                                href="https://github.com/MartinChrrr">
+                                href="https://www.linkedin.com/in/m-charrier/">
                                 <LinkedinIcon size={12} className="text-foreground"/>
                                 
                             </Link>
