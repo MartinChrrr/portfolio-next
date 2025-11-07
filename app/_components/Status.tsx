@@ -33,30 +33,31 @@ const projects : ProjectRowProps[] = [
 ]
 
 const works: WorkRowProps[] = [
-
+    {
+        url:"https://www.hyperfiction.fr/",
+        title: "Hyperfiction",
+        image: "/images/hyperfiction.png",
+        description: "C# Developer",
+        date: "2023-2024"
+    },
     {
         url:"https://residences-stella.com/",
         title: "Stella Management",
         image: "/images/stella.svg",
         description: "Receptionist",
         date: "2017-2023"
-    },{
-        url:"https://www.hyperfiction.fr/",
-        title: "Hyperfiction",
-        image: "/images/hyperfiction.png",
-        description: "C# Developer",
-        date: "2023-2024"
     }
 ]
 
 const educations: EducationRowProps[] =[
     {
         url:"https://handigital-formation.com/",
-        title: "Unity/Unreal Developer",
+        title: "Application Designer and Developer",
         image: "/images/handigital.png",
         school: "Handigital",
-        date: "2023-2024"
-    },{
+        date: "2025-Present"
+    },
+    {
         url:"https://handigital-formation.com/",
         title: "Web Developer",
         image: "/images/handigital.png",
@@ -65,36 +66,17 @@ const educations: EducationRowProps[] =[
     },
     {
         url:"https://handigital-formation.com/",
-        title: "Application Designer and Developer",
+        title: "Unity/Unreal Developer",
         image: "/images/handigital.png",
         school: "Handigital",
-        date: "2025-Present"
-    }
+        date: "2023-2024"
+    },
+
 ]
 
 export const Status = () => {
     return(
         <Section classname="flex max-lg:flex-col items-start gap-4">
-            <div className="flex-[3] w-full">
-                <Card className=" w-full p-4 flex flex-col gap-2">
-                    <p className="text-muted-foreground text-lg">My projects</p>
-                    <div className="flex flex-col gap-4">
-                        {
-                        projects.map((project, index) => (<ProjectRow
-                            key={index}
-                            url={project.url}
-                            logo={project.logo}
-                            title={project.title}
-                            description={project.description}
-
-                            />
-
-                        )
-                    )}
-
-                    </div>
-                </Card>
-            </div>
             <div className="flex-[2] w-full flex flex-col h-full gap-4">
                 <Card className="p-4 flex-1">
                     <p className="text-muted-foreground text-lg">Work</p>
@@ -128,6 +110,27 @@ export const Status = () => {
                     </div>
                 </Card>
             </div>
+            <div className="flex-[3] w-full">
+                <Card className=" w-full p-4 flex flex-col gap-2">
+                    <p className="text-muted-foreground text-lg">My projects</p>
+                    <div className="flex flex-col gap-4">
+                        {
+                        projects.map((project, index) => (<ProjectRow
+                            key={index}
+                            url={project.url}
+                            logo={project.logo}
+                            title={project.title}
+                            description={project.description}
+
+                            />
+
+                        )
+                    )}
+
+                    </div>
+                </Card>
+            </div>
+
         </Section>
     )
 }
