@@ -1,27 +1,75 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
 import { ProjectRow, ProjectRowProps } from "./ProjectRow"
-import { BookOpenText, MessageCircle } from "lucide-react"
+import { BookOpenText, Github, GithubIcon, MessageCircle } from "lucide-react"
+import { WorkRow, WorkRowProps } from "./WorkRow"
+import { EducationRow, EducationRowProps } from "./EducationRow"
 
 const projects : ProjectRowProps[] = [
     {
         url: "",
-        logo: BookOpenText,
+        logo: Github,
         title: "StorySparkle",
-        description:"Create a story based on an picture you upload"
+        description:"Create a story based on your picture"
     },    {
         url: "",
-        logo: MessageCircle,
-        title: "Game",
+        logo: Github,
+        title: "GameSync",
         description:"Social network connecting gamers"
     },
     {
         url: "",
-        logo: MessageCircle,
-        title: "test",
-        description:"lorem ipsum lorem ipsum"
-    }
+        logo: Github,
+        title: "Survive",
+        description:"Game to survive"
+    }, 
+    {
+        url: "",
+        logo: Github,
+        title: "Survive",
+        description:"Game to survive"
+    },
 
+]
+
+const works: WorkRowProps[] = [
+
+    {
+        url:"https://residences-stella.com/",
+        title: "Stella Management",
+        image: "/images/stella.svg",
+        description: "Receptionist",
+        date: "2017-2023"
+    },{
+        url:"https://www.hyperfiction.fr/",
+        title: "Hyperfiction",
+        image: "/images/hyperfiction.png",
+        description: "C# Developer",
+        date: "2023-2024"
+    }
+]
+
+const educations: EducationRowProps[] =[
+    {
+        url:"https://handigital-formation.com/",
+        title: "Unity/Unreal Developer",
+        image: "/images/handigital.png",
+        school: "Handigital",
+        date: "2023-2024"
+    },{
+        url:"https://handigital-formation.com/",
+        title: "Web Developer",
+        image: "/images/handigital.png",
+        school: "Handigital",
+        date: "2024-2025"
+    },
+    {
+        url:"https://handigital-formation.com/",
+        title: "Application Designer and Developer",
+        image: "/images/handigital.png",
+        school: "Handigital",
+        date: "2025-Present"
+    }
 ]
 
 export const Status = () => {
@@ -30,7 +78,7 @@ export const Status = () => {
             <div className="flex-[3] w-full">
                 <Card className=" w-full p-4 flex flex-col gap-2">
                     <p className="text-muted-foreground text-lg">My projects</p>
-                    <div className="flex gap-4">
+                    <div className="flex flex-col gap-4">
                         {
                         projects.map((project, index) => (<ProjectRow
                             key={index}
@@ -49,13 +97,37 @@ export const Status = () => {
             </div>
             <div className="flex-[2] w-full flex flex-col h-full gap-4">
                 <Card className="p-4 flex-1">
-                    work
+                    <p className="text-muted-foreground text-lg">Work</p>
+                    <div className="flex flex-col gap-4">
+                        {
+                            works.map((work, index) =>(
+                            <WorkRow
+                            key = {index}
+                            url={work.url}
+                            title={work.title}
+                            image={work.image}
+                            description={work.description}
+                            date={work.date} />    
+                        )
+                        )}
+                    </div>
                 </Card>
                 <Card className="p-4 flex-1">
-                    education
+                    <p className="text-muted-foreground text-lg">Education</p>
+                    <div className="flex flex-col gap-4">
+                        {educations.map((education, index)=>(
+                            <EducationRow 
+                            key={index}
+                            url={education.url}
+                            title={education.title}
+                            image={education.image}
+                            school={education.school}
+                            date={education.date}
+                            />
+                        ))}
+                    </div>
                 </Card>
             </div>
-
         </Section>
     )
 }

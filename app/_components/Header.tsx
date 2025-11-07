@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Header = () => {
     return (
-        <header className="sticky top-0 py-4">
+        <header className="bg-background sticky top-0 py-4">
             <Section classname="flex items-baseline justify-between">
                 <h1 className="text-2xl font-bold text-primary">Martin Charrier</h1>
                 <div className="flex-1">
