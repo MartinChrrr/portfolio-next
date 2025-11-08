@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Section } from "./Section"
 import { CodeIcons } from "./icons/CodeIcons"
 import { SpeechIcon } from "./icons/SpeechIcon"
+import { SoftSkillsIcon } from "./icons/SoftSkillsIcon"
 
 export const Skills = () => {
     return (
@@ -24,7 +25,7 @@ export const Skills = () => {
                     
                 </div>
                 <div className="flex flex-col flex-[1]">
-                    <CodeIcons size={48}/>
+                    <SoftSkillsIcon size={48}/>
                     <h3 className="text-2xl font-semibold tracking-tight">Languages</h3>
                     <p className="text-muted-foreground text-sm">Java,C#</p>
                 </div>
