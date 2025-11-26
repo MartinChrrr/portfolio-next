@@ -4,6 +4,7 @@ import { Presentation } from "./_components/Presentation";
 import { Spacing } from "./_components/Spacing";
 import { Status } from "./_components/Status";
 import { Skills } from "./_components/Skills";
+import { Contact } from "./_components/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
   <Spacing size="sm"/>
   <Skills />
   <Spacing size="sm"/>
+  <Contact />
 
 </main>
   );

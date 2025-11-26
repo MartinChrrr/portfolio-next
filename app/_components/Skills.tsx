@@ -40,7 +40,7 @@ export const Skills = () => {
     return (
         <Section classname="flex w-full flex-col items-start gap-4 ">
             <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">What I'm good at </h2>
-            <div className="flex max-lg:flex-col w-full">
+            <div className="flex max-lg:flex-col w-full gap-4">
                 <Card className="p-6 flex-1 flex flex-col"> 
                     <h3>Langages</h3>
                     <div className="flex flex-wrap gap-2">
@@ -55,7 +55,7 @@ export const Skills = () => {
                     </div>
                 </Card>
             </div>
-            <div className="flex max-lg:flex-col w-full">
+            <div className="flex max-lg:flex-col w-full gap-4">
                 <Card className="p-6 flex-1 flex flex-col"> 
                     <h3>Soft Skills</h3>
                     <div className="flex flex-wrap gap-2">
