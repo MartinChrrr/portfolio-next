@@ -10,25 +10,20 @@ const projects : ProjectRowProps[] = [
         url: "",
         logo: Github,
         title: "StorySparkle",
-        description:"Create a story based on your picture"
+        description:"Crée une histoire unique à partir de ton image"
     },    {
         url: "",
         logo: Github,
         title: "GameSync",
-        description:"Social network connecting gamers"
+        description:"Réseau social pour les gamers "
     },
     {
         url: "",
         logo: Github,
         title: "Survive",
-        description:"Game to survive"
+        description:"Jeu de survie"
     }, 
-    {
-        url: "",
-        logo: Github,
-        title: "Survive",
-        description:"Game to survive"
-    },
+
 
 ]
 
@@ -37,14 +32,14 @@ const works: WorkRowProps[] = [
         url:"https://www.hyperfiction.fr/",
         title: "Hyperfiction",
         image: "/images/hyperfiction.png",
-        description: "C# Developer",
+        description: "Développeur C#",
         date: "2023-2024"
     },
     {
         url:"https://residences-stella.com/",
         title: "Stella Management",
         image: "/images/stella.svg",
-        description: "Receptionist",
+        description: "Réceptionniste",
         date: "2017-2023"
     }
 ]
@@ -52,21 +47,21 @@ const works: WorkRowProps[] = [
 const educations: EducationRowProps[] =[
     {
         url:"https://handigital-formation.com/",
-        title: "Application Designer and Developer",
+        title: "Concepteur Développeur d'Applications",
         image: "/images/handigital.png",
         school: "Handigital",
         date: "2025-Present"
     },
     {
         url:"https://handigital-formation.com/",
-        title: "Web Developer",
+        title: "Développeur Web",
         image: "/images/handigital.png",
         school: "Handigital",
         date: "2024-2025"
     },
     {
         url:"https://handigital-formation.com/",
-        title: "Unity/Unreal Developer",
+        title: "Développeur Unity/Unreal",
         image: "/images/handigital.png",
         school: "Handigital",
         date: "2023-2024"
