@@ -74,7 +74,7 @@ export const Status = () => {
         <Section classname="flex max-lg:flex-col items-start gap-4">
             <div className="flex-[2] w-full flex flex-col h-full gap-4">
                 <Card className="p-4 flex-1">
-                    <p className=" text-lg text-primary">Work</p>
+                    <p className=" text-lg text-primary">Expériences professionnelles</p>
                     <div className="flex flex-col gap-4">
                         {
                             works.map((work, index) =>(
@@ -90,7 +90,7 @@ export const Status = () => {
                     </div>
                 </Card>
                 <Card className="p-4 flex-1">
-                    <p className="text-primary text-lg">Education</p>
+                    <p className="text-primary text-lg">Formations</p>
                     <div className="flex flex-col gap-4">
                         {educations.map((education, index)=>(
                             <EducationRow 
@@ -107,7 +107,7 @@ export const Status = () => {
             </div>
             <div className="flex-[3] w-full">
                 <Card className=" w-full p-4 flex flex-col gap-2">
-                    <p className="text-primary text-lg">My projects</p>
+                    <p className="text-primary text-lg">Mes projets</p>
                     <div className="flex flex-col gap-4">
                         {
                         projects.map((project, index) => (<ProjectRow

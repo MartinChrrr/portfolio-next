@@ -16,7 +16,7 @@ export const Contact = () => {
             <h2 className="font-caption text-3xl text-glow mb-6">Contactez-moi !</h2>
             <div className="flex w-full gap-4">
                 <Card className="flex-1 glass p-8">
-                    <h3 className="text-2xl font-bold mb-6 text-primary">Informations</h3>
+                    <h3 className="text-lg text-primary mb-6">Informations</h3>
                     <div className="space-y-6">
                         <Link href={`mailto:martin_charrier@yahoo.fr`} className="flex items-start gap-4 hover:text-primary transition-colors group">
                             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
@@ -48,7 +48,7 @@ export const Contact = () => {
                      </div>
                 </Card>
                 <Card className="flex-1 glass p-8">
-                    <h3 className="text-2xl font-bold mb-6 text-primary">Réseaux Sociaux</h3>
+                    <h3 className="text-lg text-primary mb-6">Réseaux Sociaux</h3>
                     <p className="text-muted-foreground mb-6">Retrouvez-moi également sur les réseaux sociaux pour suivre mes projets et partager mes découvertes.</p>
                     <div className="flex gap-3 mb-8">
                         {socialLinks.map((social, index) => {
