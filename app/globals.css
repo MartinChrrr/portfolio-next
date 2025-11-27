@@ -74,8 +74,10 @@
   --card-foreground: hsl(219, 18%, 76%);
   --border: hsl(216, 3%, 20%);
   --input: hsl(216, 3%, 23%);
-  --primary: hsl(219, 18%, 81%);
-  --primary-foreground: hsl(219, 18%, 21%);
+  /* --primary: hsl(219, 18%, 81%);
+  --primary-foreground: hsl(219, 18%, 21%); */
+  --primary: hsl(189, 97%, 55%);
+  --primary-foreground: hsl(220, 26%, 14%);
   --secondary: hsl(219, 8%, 25%);
   --secondary-foreground: hsl(219, 8%, 85%);
   --accent: hsl(216, 13%, 30%);
