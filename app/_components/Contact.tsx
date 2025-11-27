@@ -14,7 +14,7 @@ export const Contact = () => {
     return(
          <Section classname="flex w-full flex-col items-start gap-4 ">
             <h2 className="font-caption text-3xl text-glow mb-6 text-white">Contactez-moi !</h2>
-            <div className="flex w-full gap-4">
+            <div className="flex w-full gap-4 max-lg:flex-col">
                 <Card className="flex-1 glass p-8">
                     <h3 className="text-lg text-primary mb-6">Informations</h3>
                     <div className="space-y-6">

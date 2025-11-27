@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <header className="bg-background sticky top-0 py-4">
             <Section classname="flex items-baseline justify-between">
-                <h1 className="text-2xl font-bold text-primary">Martin Charrier</h1>
+                <h1 className="text-2xl font-bold text-primary">M . C</h1>
                 <div className="flex-1">
                     <ul className="flex justify-end">
                         <li>
