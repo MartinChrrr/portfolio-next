@@ -39,7 +39,7 @@ export const Skills = () => {
 
     return (
         <Section classname="flex w-full flex-col items-start gap-4 ">
-            <h2 className="pb-2 font-caption text-3xl text-glow tracking-tight first:mt-0">What I'm good at </h2>
+            <h2 className="pb-2 font-caption text-3xl text-glow tracking-tight first:mt-0 text-white">What I'm good at </h2>
             <div className="flex max-lg:flex-col w-full gap-4">
                 <Card className="p-6 flex-1 flex flex-col"> 
                     <h3 className="text-lg text-primary">Langages</h3>

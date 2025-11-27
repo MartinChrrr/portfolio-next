@@ -9,8 +9,8 @@ export const Presentation = () => {
 return (
     <Section classname="flex max-lg:flex-col items-start gap-4">
         <div className="flex-[3] w-full flex flex-col gap-2">
-            <h2 className="font-caption text-4xl text-glow font-bold">Martin Charrier</h2>
-            <h3 className="font-caption text-3xl text-glow">Developer</h3>
+            <h2 className="font-caption text-4xl text-glow font-bold text-white">Martin Charrier</h2>
+            <h3 className="font-caption text-3xl text-glow text-white">Developer</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit reiciendis omnis praesentium nulla maiores cupiditate, atque,
                  dolorum quaerat nam nemo fugit saepe sequi vel necessitatibus ad voluptatibus, ducimus libero doloribus.</p>
         </div>
