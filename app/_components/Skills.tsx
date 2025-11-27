@@ -39,17 +39,17 @@ export const Skills = () => {
 
     return (
         <Section classname="flex w-full flex-col items-start gap-4 ">
-            <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">What I'm good at </h2>
+            <h2 className="pb-2 font-caption text-3xl text-glow tracking-tight first:mt-0">What I'm good at </h2>
             <div className="flex max-lg:flex-col w-full gap-4">
                 <Card className="p-6 flex-1 flex flex-col"> 
-                    <h3>Langages</h3>
+                    <h3 className="text-lg text-primary">Langages</h3>
                     <div className="flex flex-wrap gap-2">
                        {languages.map((language, index) => (<BadgeSkills key = {index}>{language}</BadgeSkills>))}
                     </div>
 
                 </Card>
                 <Card className="p-6 flex-1 "> 
-                    <h3>Librairie et Framework</h3>
+                    <h3 className="text-lg text-primary">Librairie et Framework</h3>
                     <div className="flex flex-wrap gap-2">
                        {frameworks.map((framework, index) => (<BadgeSkills key = {index}>{framework}</BadgeSkills>))}
                     </div>
@@ -57,14 +57,14 @@ export const Skills = () => {
             </div>
             <div className="flex max-lg:flex-col w-full gap-4">
                 <Card className="p-6 flex-1 flex flex-col"> 
-                    <h3>Soft Skills</h3>
+                    <h3 className="text-lg text-primary">Soft Skills</h3>
                     <div className="flex flex-wrap gap-2">
                        {softSkills.map((skill, index) => (<BadgeSkills key = {index}>{skill}</BadgeSkills>))}
                     </div>
 
                 </Card>
                 <Card className="p-6 flex-1 "> 
-                    <h3>Outils</h3>
+                    <h3 className="text-lg text-primary">Outils</h3>
                     <div className="flex flex-wrap gap-2">
                        {frameworks.map((framework, index) => (<BadgeSkills key = {index}>{framework}</BadgeSkills>))}
                     </div>
