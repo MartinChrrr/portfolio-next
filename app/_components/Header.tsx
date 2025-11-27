@@ -6,10 +6,18 @@ import Link from "next/link";
 
 
 export const Header = () => {
+    // const navItems = [
+    //     {label: "À propos", id: "#about"},
+    //     {label: "Experiences", id: "#experiences"},
+    //     {label: "Compétences", id: "#skills"},
+    //     {label: "Contact", id: "#contact"}
+    // ]
     return (
         <header className="bg-background sticky top-0 py-4">
             <Section classname="flex items-baseline justify-between">
-                <h1 className="text-2xl font-bold text-primary">M . C</h1>
+
+
+                <h1 className="text-4xl font-bold text-white flex-1 text-glow">Martin Charrier</h1>
                 <div className="flex-1">
                     <ul className="flex justify-end">
                         <li>

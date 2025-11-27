@@ -12,7 +12,7 @@ export const Contact = () => {
   ];
 
     return(
-         <Section classname="flex w-full flex-col items-start gap-4 ">
+         <Section classname="flex w-full flex-col items-start gap-4 " id="contact">
             <h2 className="font-caption text-3xl text-glow mb-6 text-white">Contactez-moi !</h2>
             <div className="flex w-full gap-4 max-lg:flex-col">
                 <Card className="flex-1 glass p-8">

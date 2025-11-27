@@ -71,61 +71,63 @@ const educations: EducationRowProps[] =[
 
 export const Status = () => {
     return(
-        <Section classname="flex max-lg:flex-col items-start gap-4">
-            <div className="flex-[2] w-full flex flex-col h-full gap-4">
-                <Card className="p-4 flex-1">
-                    <p className=" text-lg text-primary">Expériences professionnelles</p>
-                    <div className="flex flex-col gap-4">
-                        {
-                            works.map((work, index) =>(
-                            <WorkRow
-                            key = {index}
-                            url={work.url}
-                            title={work.title}
-                            image={work.image}
-                            description={work.description}
-                            date={work.date} />    
-                        )
+        <Section classname=" scroll-mt-20 " id="experiences">
+            <h2 className="font-caption text-3xl text-glow mb-6 text-white">Experiences</h2>
+            <div className="flex max-lg:flex-col items-start gap-4">
+                <div className="flex-[2] w-full flex flex-col h-full gap-4">
+                    <Card className="p-4 flex-1">
+                        <p className=" text-lg text-primary">Expériences professionnelles</p>
+                        <div className="flex flex-col gap-4">
+                            {
+                                works.map((work, index) =>(
+                                <WorkRow
+                                key = {index}
+                                url={work.url}
+                                title={work.title}
+                                image={work.image}
+                                description={work.description}
+                                date={work.date} />    
+                            )
+                            )}
+                        </div>
+                    </Card>
+                    <Card className="p-4 flex-1">
+                        <p className="text-primary text-lg">Formations</p>
+                        <div className="flex flex-col gap-4">
+                            {educations.map((education, index)=>(
+                                <EducationRow 
+                                key={index}
+                                url={education.url}
+                                title={education.title}
+                                image={education.image}
+                                school={education.school}
+                                date={education.date}
+                                />
+                            ))}
+                        </div>
+                    </Card>
+                </div>
+                <div className="flex-[3] w-full">
+                    <Card className=" w-full p-4 flex flex-col gap-2">
+                        <p className="text-primary text-lg">Mes projets</p>
+                        <div className="flex flex-col gap-4">
+                            {
+                            projects.map((project, index) => (<ProjectRow
+                                key={index}
+                                url={project.url}
+                                logo={project.logo}
+                                title={project.title}
+                                description={project.description}
+
+                                />
+
+                            )
                         )}
-                    </div>
-                </Card>
-                <Card className="p-4 flex-1">
-                    <p className="text-primary text-lg">Formations</p>
-                    <div className="flex flex-col gap-4">
-                        {educations.map((education, index)=>(
-                            <EducationRow 
-                            key={index}
-                            url={education.url}
-                            title={education.title}
-                            image={education.image}
-                            school={education.school}
-                            date={education.date}
-                            />
-                        ))}
-                    </div>
-                </Card>
+
+                        </div>
+                    </Card>
+                </div>
             </div>
-            <div className="flex-[3] w-full">
-                <Card className=" w-full p-4 flex flex-col gap-2">
-                    <p className="text-primary text-lg">Mes projets</p>
-                    <div className="flex flex-col gap-4">
-                        {
-                        projects.map((project, index) => (<ProjectRow
-                            key={index}
-                            url={project.url}
-                            logo={project.logo}
-                            title={project.title}
-                            description={project.description}
-
-                            />
-
-                        )
-                    )}
-
-                    </div>
-                </Card>
-            </div>
-
         </Section>
     )
 }
