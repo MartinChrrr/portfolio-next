@@ -59,14 +59,16 @@ export const Contact = () => {
                         href={social.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1"
+                        className="flex-1 group"
                     >
                         <Button 
                         variant="outline" 
-                        className="w-full glass hover:bg-primary/20 transition-all"
+                        className="w-full bg-primary/20 hover:bg-primary/30 transition-all "
                         >
-                        <Icon className="h-5 w-5 mr-2" />
-                        {social.label}
+                        <Icon className="h-5 w-5 mr-2 group-hover:text-primary" />
+                            <span className="group-hover:text-primary transition-colors">
+                                {social.label}
+                            </span>
                         </Button>
                     </a>
                     );
