@@ -7,18 +7,18 @@ import { EducationRow, EducationRowProps } from "./EducationRow"
 
 const projects : ProjectRowProps[] = [
     {
-        url: "",
+        url: "https://github.com/MartinChrrr/story_maker",
         logo: Github,
         title: "StorySparkle",
         description:"Crée une histoire unique à partir de ton image"
     },    {
-        url: "",
+        url: "https://github.com/MartinChrrr/GameSync",
         logo: Github,
         title: "GameSync",
         description:"Réseau social pour les gamers "
     },
     {
-        url: "",
+        url: "https://github.com/MartinChrrr/survive",
         logo: Github,
         title: "Survive",
         description:"Jeu de survie"
@@ -72,7 +72,7 @@ const educations: EducationRowProps[] =[
 export const Status = () => {
     return(
         <Section classname=" scroll-mt-20 " id="experiences">
-            <h2 className="font-caption text-3xl text-glow mb-6 text-white">Experiences</h2>
+            <h2 className="font-caption text-3xl text-glow mb-6 text-white">Expériences</h2>
             <div className="flex max-lg:flex-col items-start gap-4">
                 <div className="flex-[2] w-full flex flex-col h-full gap-4">
                     <Card className="p-4 flex-1">

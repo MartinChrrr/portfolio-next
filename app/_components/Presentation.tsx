@@ -19,7 +19,8 @@ return (
         </div>
        
         <div className="flex-[2]">
-            <img src="/images/myphoto.png" 
+            {/* <img src="/images/myphoto.png"  */}
+            <img src="/images/photo.jpg" 
             className="w-1/2 m-auto h-auto max-w-sm rounded-full " 
              alt="photo de Martin Charrier"  />
         </div>
