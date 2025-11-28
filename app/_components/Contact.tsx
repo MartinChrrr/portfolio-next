@@ -18,7 +18,10 @@ export const Contact = () => {
                 <Card className="flex-1 glass p-8">
                     <h3 className="text-lg text-primary mb-6">Informations</h3>
                     <div className="space-y-6">
-                        <Link href={`mailto:martin_charrier@yahoo.fr`} className="flex items-start gap-4 hover:text-primary transition-colors group">
+                        <Link href={`mailto:martin_charrier@yahoo.fr`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-start gap-4 hover:text-primary transition-colors group">
                             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
                                 <Mail/>
                             </div>
@@ -27,7 +30,10 @@ export const Contact = () => {
                                 <p>martin_charrier@yahoo.fr</p>
                             </div>
                         </Link>
-                        <Link href={`tel:+33781189485`} className="flex items-start gap-4 hover:text-primary transition-colors group">
+                        <Link href={`tel:+33781189485`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-start gap-4 hover:text-primary transition-colors group">
                             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
                                 <Phone/>
                             </div>

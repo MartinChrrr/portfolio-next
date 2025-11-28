@@ -22,14 +22,17 @@ export const Header = () => {
                     <ul className="flex justify-end">
                         <li>
                             <Link className={`${buttonVariants({ variant: "outline" ,size:"icon"})} p-0 mx-1`} 
-                        
+                            target="_blank"
+                            rel="noopener noreferrer"
                                 href="https://github.com/MartinChrrr">
                                 <GithubIcon size={12} className="text-foreground" />
                             </Link>
                         </li>
                         <li>
                             <Link className={`${buttonVariants({ variant: "outline", size:"icon" })}  p-0 mx-1`}    
-                                href="https://www.linkedin.com/in/m-charrier/">
+                                href="https://www.linkedin.com/in/m-charrier/"
+                                target="_blank"
+                                rel="noopener noreferrer">
                                 <LinkedinIcon size={12} className="text-foreground"/>
                                 
                             </Link>

@@ -10,7 +10,10 @@ export type WorkRowProps = {
 
 export const WorkRow = (props: WorkRowProps) => {
     return(
-        <Link href={props.url} className="group inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-2">          
+        <Link href={props.url} 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-2">          
                 <img src={props.image} alt={props.title} className=" w-8 h-8 object-contain" />
             <div>
                 <div className="text-lg font-semibold group-hover:text-primary">{props.title}</div>

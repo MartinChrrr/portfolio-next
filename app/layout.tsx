@@ -5,6 +5,10 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
 import "./globals.css";
+import Snowfall from "react-snowfall";
+
+
+
 
 const anekTelugu = Anek_Telugu({
   subsets: ["latin"], 

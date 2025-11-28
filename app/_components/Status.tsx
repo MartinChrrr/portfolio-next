@@ -46,15 +46,15 @@ const works: WorkRowProps[] = [
 
 const educations: EducationRowProps[] =[
     {
-        url:"https://handigital-formation.com/",
+        url:"https://www.francecompetences.fr/recherche/rncp/37873/",
         title: "Concepteur Développeur d'Applications",
         image: "/images/handigital.png",
         school: "Handigital",
         date: "2025-Present"
     },
     {
-        url:"https://handigital-formation.com/",
-        title: "Développeur Web",
+        url:"https://www.francecompetences.fr/recherche/rncp/37674/",
+        title: "Développeur Web et Web Mobile",
         image: "/images/handigital.png",
         school: "Handigital",
         date: "2024-2025"
@@ -118,9 +118,7 @@ export const Status = () => {
                                 logo={project.logo}
                                 title={project.title}
                                 description={project.description}
-
                                 />
-
                             )
                         )}
 
