@@ -33,7 +33,7 @@ const works: WorkRowProps[] = [
         title: "Hyperfiction",
         image: "/images/hyperfiction.png",
         description: "Développeur C#",
-        date: "2023-2024"
+        date: "2024-2025"
     },
     {
         url:"https://residences-stella.com/",
