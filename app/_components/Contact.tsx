@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button"
 
 export const Contact = () => {
       const socialLinks = [
-    { icon: Github, label: "GitHub", href: "https://https://github.com/MartinChrrr.com" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/m-charrier/" },
+    { icon: Github, label: "GitHub", href: "https://github.com/MartinChrrr" },
+x    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/m-charrier/" },
     
   ];
 
