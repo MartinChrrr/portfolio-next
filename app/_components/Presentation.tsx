@@ -12,10 +12,12 @@ return (
         <div className="flex-[3] w-full flex flex-col gap-2">
             {/* <h2 className="font-caption text-4xl text-glow font-bold text-white">Martin Charrier</h2> */}
             <h2 className="font-caption text-3xl text-glow text-white">Concepteur Développeur d'Applications</h2>
-            <p className="text-justify">Titulaire d’un diplôme Bac+2 en Développement Web et Web Mobile et d’une première expérience professionnelle d’un an en tant que développeur, 
-                je souhaite poursuivre ma formation en alternance afin d’acquérir le titre de Concepteur Développeur d’Applications (Bac +3). 
-                <br/>Attiré par les défis et la résolution de problèmes, j’ai acquis des compétences 
-                à la fois en front-end et en back-end que je souhaiterais  mettre au service de projets innovants. </p>
+            <p className="text-justify">
+                Développeur fullstack avec une première expérience professionnelle en alternance (API PHP/Node, React SSR, PostgreSQL, Neo4j),
+                je recherche une alternance pour valider mon titre Concepteur Développeur d'Applications (Bac+3). 
+                <br/>Autonome et rigoureux, j'aime résoudre des problèmes techniques concrets et monter en compétences au quotidien.
+
+            </p>
         </div>
        
         <div className="flex-[2]">
