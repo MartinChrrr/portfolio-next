@@ -1,35 +1,56 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
 import { ProjectRow, ProjectRowProps } from "./ProjectRow"
-import { BookOpenText, Github, GithubIcon, MessageCircle } from "lucide-react"
+import { GithubIcon } from "lucide-react"
 import { WorkRow, WorkRowProps } from "./WorkRow"
 import { EducationRow, EducationRowProps } from "./EducationRow"
 
-const projects : ProjectRowProps[] = [
+const proProjects : ProjectRowProps[] = [
     {
-        url: "https://github.com/MartinChrrr/story_maker",
-        logo: Github,
-        title: "StorySparkle",
-        description:"Crée une histoire unique à partir de ton image"
-    },    {
-        url: "https://github.com/MartinChrrr/GameSync",
-        logo: Github,
-        title: "GameSync",
-        description:"Réseau social pour les gamers "
+        url: "/projects/hyperfiction",
+        logo: GithubIcon,
+        title: "Hyperfiction",
+        description:"Applications XR éducatives pour les métiers du BTP"
     },
     {
-        url: "https://github.com/MartinChrrr/survive",
-        logo: Github,
+        url: "/projects/makeprops",
+        logo: GithubIcon,
+        title: "MakeProps",
+        description:"API REST et applications front-end React"
+    },
+]
+
+const ecoleProjects : ProjectRowProps[] = [
+    {
+        url: "/projects/storysparkle",
+        logo: GithubIcon,
+        title: "StorySparkle",
+        description:"Crée une histoire unique à partir de ton image"
+    },
+    {
+        url: "/projects/gamesync",
+        logo: GithubIcon,
+        title: "GameSync",
+        description:"Réseau social pour les gamers"
+    },
+    {
+        url: "/projects/survive",
+        logo: GithubIcon,
         title: "Survive",
         description:"Jeu de survie"
-    }, 
-
-
+    },
 ]
 
 const works: WorkRowProps[] = [
     {
-        url:"https://www.hyperfiction.fr/",
+        url:"/projects/makeprops",
+        title: "MakeProps",
+        image: "/images/makeprops.svg",
+        description: "Développeur Fullstack",
+        date: "2025-Present"
+    },
+    {
+        url:"/projects/hyperfiction",
         title: "Hyperfiction",
         image: "/images/hyperfiction.png",
         description: "Développeur C#",
@@ -107,21 +128,33 @@ export const Status = () => {
                         </div>
                     </Card>
                 </div>
-                <div className="flex-[3] w-full">
-                    <Card className=" w-full p-4 flex flex-col gap-2">
-                        <p className="text-primary text-lg">Mes projets</p>
+                <div className="flex-[3] w-full flex flex-col gap-4">
+                    <Card className="w-full p-4 flex flex-col gap-2">
+                        <p className="text-primary text-lg">Projets professionnels</p>
                         <div className="flex flex-col gap-4">
-                            {
-                            projects.map((project, index) => (<ProjectRow
-                                key={index}
-                                url={project.url}
-                                logo={project.logo}
-                                title={project.title}
-                                description={project.description}
+                            {proProjects.map((project, index) => (
+                                <ProjectRow
+                                    key={index}
+                                    url={project.url}
+                                    logo={project.logo}
+                                    title={project.title}
+                                    description={project.description}
                                 />
-                            )
-                        )}
-
+                            ))}
+                        </div>
+                    </Card>
+                    <Card className="w-full p-4 flex flex-col gap-2">
+                        <p className="text-primary text-lg">Projets école</p>
+                        <div className="flex flex-col gap-4">
+                            {ecoleProjects.map((project, index) => (
+                                <ProjectRow
+                                    key={index}
+                                    url={project.url}
+                                    logo={project.logo}
+                                    title={project.title}
+                                    description={project.description}
+                                />
+                            ))}
                         </div>
                     </Card>
                 </div>
