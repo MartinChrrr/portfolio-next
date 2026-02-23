@@ -17,7 +17,7 @@ export const EducationRow = (props: EducationRowProps) => {
                 <img src={props.image} alt={props.title} className=" w-8 h-8 object-contain" />
             <div>
                 <div className="text-lg font-semibold group-hover:text-primary">{props.title}</div>
-                <p className="text-muted-foreground text-sm">{props.school}</p>
+                <p className="text-muted-foreground text-base">{props.school}</p>
             </div>
             <div className="ml-auto">
                 <p className="text-muted-foreground text-sm">{props.date}</p>

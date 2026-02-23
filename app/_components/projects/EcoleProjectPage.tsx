@@ -42,7 +42,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
 
         {/* Description block with accent left border */}
         <div className="border-l-2 border-primary/60 bg-card/50 rounded-r-xl pl-5 pr-6 py-5">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+          <p className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
             Description
           </p>
           <p className="text-card-foreground leading-relaxed">
@@ -53,7 +53,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
         {/* Context block with accent left border */}
         {project.context && (
           <div className="border-l-2 border-primary/60 bg-card/50 rounded-r-xl pl-5 pr-6 py-5">
-            <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+            <p className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
               Contexte
             </p>
             <p className="text-card-foreground leading-relaxed">
@@ -67,7 +67,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
           <div className="lg:col-span-2 flex flex-col gap-6">
             {project.problems && (
               <Card className="p-6">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+                <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
                   Problématique
                 </h3>
                 <p className="leading-relaxed">{project.problems}</p>
@@ -76,7 +76,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
 
             {project.role && (
               <Card className="p-6">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+                <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
                   Rôle
                 </h3>
                 <p className="leading-relaxed">{project.role}</p>
@@ -87,7 +87,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
           <div className="lg:col-span-1">
             {project.technologies.length > 0 && (
               <Card className="p-6 h-full">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
+                <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-3">
                   Stack
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -103,7 +103,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
         {/* Highlights as timeline */}
         {project.highlights.length > 0 && (
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-5">
+            <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
               Points clés
             </h3>
             <div className="flex flex-col">
@@ -127,7 +127,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
         {/* Screenshots carousel */}
         {project.images.length > 0 && (
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-5">
+            <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
               Screenshots
             </h3>
             <Card className="p-6">

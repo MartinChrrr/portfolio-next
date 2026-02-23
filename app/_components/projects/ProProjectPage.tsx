@@ -21,10 +21,10 @@ const ArchDiagram = ({ stages }: { stages: ArchStage[] }) => (
                 key={itemIndex}
                 className="rounded-xl border border-primary/20 bg-primary/5 px-5 py-3 text-center"
               >
-                <p className="font-mono text-sm font-semibold text-primary">
+                <p className="font-mono text-base font-semibold text-primary">
                   {item.label}
                 </p>
-                <p className="text-xs text-muted-foreground">{item.sub}</p>
+                <p className="text-sm text-muted-foreground">{item.sub}</p>
               </div>
             ))}
           </div>
@@ -54,7 +54,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
               {project.title}
             </h2>
             {project.confidential && (
-              <span className="inline-flex items-center gap-1 text-xs text-muted-foreground border border-muted-foreground/30 rounded-full px-2.5 py-0.5">
+              <span className="inline-flex items-center gap-1 text-sm text-muted-foreground border border-muted-foreground/30 rounded-full px-2.5 py-0.5">
                 <Lock className="h-3 w-3" />
                 Confidentiel
               </span>
@@ -68,7 +68,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
 
         {/* Description block with accent left border */}
         <div className="border-l-2 border-primary/60 bg-card/50 rounded-r-xl pl-5 pr-6 py-5">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+          <p className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
             Description
           </p>
           <p className="text-card-foreground leading-relaxed">
@@ -84,7 +84,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
                 <p className="font-mono text-5xl font-extrabold text-glow text-white">
                   {figure.value}
                 </p>
-                <p className="text-sm text-muted-foreground mt-1">
+                <p className="text-base text-muted-foreground mt-1">
                   {figure.label}
                 </p>
               </div>
@@ -95,7 +95,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
         {/* Context block with accent left border */}
         {project.context && (
           <div className="border-l-2 border-primary/60 bg-card/50 rounded-r-xl pl-5 pr-6 py-5">
-            <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+            <p className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
               Contexte
             </p>
             <p className="text-card-foreground leading-relaxed">
@@ -109,7 +109,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
           <div className="lg:col-span-2 flex flex-col gap-6">
             {project.problems && (
               <Card className="p-6">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+                <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
                   Problématique
                 </h3>
                 <p className="leading-relaxed">{project.problems}</p>
@@ -118,7 +118,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
 
             {project.role && (
               <Card className="p-6">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+                <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
                   Rôle
                 </h3>
                 <p className="leading-relaxed">{project.role}</p>
@@ -129,7 +129,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
           <div className="lg:col-span-1">
             {project.technologies.length > 0 && (
               <Card className="p-6 h-full">
-                <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
+                <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-3">
                   Stack
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -145,7 +145,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
         {/* Architecture diagram */}
         {project.architecture && project.architecture.length > 0 && (
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-5">
+            <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
               Architecture
             </h3>
             <ArchDiagram stages={project.architecture} />
@@ -155,7 +155,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
         {/* Highlights as timeline */}
         {project.highlights.length > 0 && (
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-5">
+            <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
               Points clés
             </h3>
             <div className="flex flex-col">
@@ -179,7 +179,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
         {/* Sub-projects */}
         {project.subProjects && project.subProjects.length > 0 && (
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-primary mb-5">
+            <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
               Sous-projets
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -191,12 +191,12 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
                   <div className="flex items-center gap-2 mb-2">
                     <h4 className="font-semibold text-white">{sub.title}</h4>
                     {sub.autonomous && (
-                      <span className="text-xs text-primary border border-primary/30 bg-primary/10 rounded-full px-2 py-0.5">
+                      <span className="text-sm text-primary border border-primary/30 bg-primary/10 rounded-full px-2 py-0.5">
                         Autonome
                       </span>
                     )}
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     {sub.description}
                   </p>
                 </Card>
@@ -225,7 +225,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
 
         {/* Confidentiality footer */}
         {project.confidential && (
-          <p className="text-center text-xs text-muted-foreground/60 italic border-t border-border/30 pt-4">
+          <p className="text-center text-sm text-muted-foreground/60 italic border-t border-border/30 pt-4">
             Projet confidentiel — visuels non diffusables
           </p>
         )}

@@ -26,7 +26,7 @@ export const Contact = () => {
                                 <Mail/>
                             </div>
                             <div>
-                                <p className="font-semibold text-sm text-muted-foreground">Email</p>
+                                <p className="font-semibold text-base text-muted-foreground">Email</p>
                                 <p>martin_charrier@yahoo.fr</p>
                             </div>
                         </Link>
@@ -38,7 +38,7 @@ export const Contact = () => {
                                 <Phone/>
                             </div>
                             <div>
-                                <p className="font-semibold text-sm text-muted-foreground">Téléphone</p>
+                                <p className="font-semibold text-base text-muted-foreground">Téléphone</p>
                                 <p>+33 7 81 18 94 85</p>
                             </div>
                         </Link>
@@ -47,7 +47,7 @@ export const Contact = () => {
                                 <MapPin/>
                             </div>
                             <div>
-                                <p className="font-semibold text-sm text-muted-foreground">Localisation</p>
+                                <p className="font-semibold text-base text-muted-foreground">Localisation</p>
                                 <p>Aix-les-Bains, France</p>
                             </div>
                         </Link>
