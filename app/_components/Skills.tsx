@@ -34,7 +34,10 @@ export const Skills = () => {
         "Git", 
         "Github",
         "Figma",
-        "Linux"
+        "Linux",
+        "Docker", 
+        "Cursor", 
+        "Claude Code"
     ]
 
     return (
@@ -66,7 +69,7 @@ export const Skills = () => {
                 <Card className="p-6 flex-1 "> 
                     <h3 className="text-lg text-primary">Outils</h3>
                     <div className="flex flex-wrap gap-2">
-                       {frameworks.map((framework, index) => (<BadgeSkills key = {index}>{framework}</BadgeSkills>))}
+                       {tools.map((tool, index) => (<BadgeSkills key = {index}>{tool}</BadgeSkills>))}
                     </div>
                 </Card>
             </div>
