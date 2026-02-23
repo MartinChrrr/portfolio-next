@@ -55,7 +55,11 @@ export const projects: Project[] = [
       "Application utilisant l'IA pour générer des histoires à partir d'images uploadées par l'utilisateur.",
     type: "ecole",
     technologies: ["Python", "Flask", "OpenAI API", "Docker", "PostgreSQL"],
-    images: [],
+    images: [
+      { src: "/images/StorySparkle/LandingPage.png", alt: "Page d'accueil de StorySparkle" },
+      { src: "/images/StorySparkle/Catalog.png", alt: "Catalogue des histoires générées" },
+      { src: "/images/StorySparkle/details.png", alt: "Détail d'une histoire générée" },
+    ],
     links: [
       {
         label: "GitHub",
