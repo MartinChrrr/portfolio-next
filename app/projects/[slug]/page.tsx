@@ -3,6 +3,7 @@ import { Header } from "@/app/_components/Header";
 import { ProProjectPage } from "@/app/_components/projects/ProProjectPage";
 import { EcoleProjectPage } from "@/app/_components/projects/EcoleProjectPage";
 import { projects, getProjectBySlug } from "@/app/_data/projects";
+import GradientMesh from "@/app/_components/GradientMesh";
 
 export function generateStaticParams() {
   return projects.map((project) => ({
@@ -38,6 +39,7 @@ export default async function ProjectPage({
 
   return (
     <main>
+      <GradientMesh />
       <Header />
       {project.type === "pro" ? (
         <ProProjectPage project={project} />
