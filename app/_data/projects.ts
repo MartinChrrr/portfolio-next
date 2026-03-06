@@ -33,7 +33,7 @@ export const projects: Project[] = [
     title: "MakeProps",
     subtitle: "Développeur Fullstack",
     description:
-      "Développement en autonomie d'API REST et d'applications front-end pour un client grand compte du secteur énergie.",
+      "Développement en autonomie d'API REST et d'applications front-end pour différents projets clients, avec des besoins techniques variés allant du rendu côté serveur à la modélisation de données en base graphe. ",
     problems:
       "Le client avait besoin d'applications performantes avec un bon référencement, ce qui a orienté le choix vers du rendu côté serveur. La modélisation des données nécessitait une base graphe pour certains cas d'usage où le relationnel classique atteignait ses limites.",
     context:
@@ -142,14 +142,14 @@ export const projects: Project[] = [
     problems:
       "Les parents n'ont pas toujours l'imagination nécessaire pour créer des histoires captivantes pour leurs enfants. L'idée était d'utiliser l'IA pour transformer n'importe quelle image en point de départ d'une histoire personnalisée.",
     context:
-      "Projet réalisé dans le cadre de la formation Développeur Web et Web Mobile. L'utilisateur uploade une image, l'IA l'analyse et génère une histoire originale. Les histoires sont sauvegardées et consultables dans un catalogue.",
+      "Projet réalisé dans le cadre de la formation. L'utilisateur uploade une image, l'IA l'analyse et génère une histoire originale. Les histoires sont sauvegardées et consultables dans un catalogue.",
     role: "Développeur unique",
     highlights: [
       "Intégration de l'API OpenAI pour la génération de texte à partir d'images",
       "Architecture back-end en Flask avec base PostgreSQL",
       "Conteneurisation avec Docker pour le déploiement",
     ],
-    technologies: ["Python", "Flask", "OpenAI API", "Docker", "PostgreSQL"],
+    technologies: ["Python", "Flask", "OpenROOTER API", "Docker", "PostgreSQL"],
     images: [
       {
         src: "/images/StorySparkle/LandingPage.png",
