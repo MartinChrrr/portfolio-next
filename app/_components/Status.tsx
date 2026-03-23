@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
 import { ProjectRow, ProjectRowProps } from "./ProjectRow"
-import { GithubIcon } from "lucide-react"
+import { AccessibilityIcon, EyeIcon, GithubIcon } from "lucide-react"
 import { WorkRow, WorkRowProps } from "./WorkRow"
 import { EducationRow, EducationRowProps } from "./EducationRow"
 
@@ -33,12 +33,21 @@ const ecoleProjects : ProjectRowProps[] = [
         title: "GameSync",
         description:"Réseau social pour les gamers"
     },
+]
+
+const personalProjects : ProjectRowProps[] = [
     {
-        url: "/projects/survive",
-        logo: GithubIcon,
-        title: "Survive",
-        description:"Jeu de survie"
+        url: "/projects/rgaaudit",
+        logo: EyeIcon,
+        title: "RGAAudit",
+        description:"Outil d'audit RGAA(WIP)"
     },
+    {
+        url: "/projects/spoony",
+        logo: AccessibilityIcon,
+        title: "Spoony",
+        description:"Application de gestion du quotidien se basant sur la théorie des cuillères (WIP)"
+    }
 ]
 
 const works: WorkRowProps[] = [
@@ -147,6 +156,20 @@ export const Status = () => {
                         <p className="text-primary text-lg">Projets école</p>
                         <div className="flex flex-col gap-4">
                             {ecoleProjects.map((project, index) => (
+                                <ProjectRow
+                                    key={index}
+                                    url={project.url}
+                                    logo={project.logo}
+                                    title={project.title}
+                                    description={project.description}
+                                />
+                            ))}
+                        </div>
+                    </Card>
+                      <Card className="w-full p-4 flex flex-col gap-2">
+                        <p className="text-primary text-lg">Projets perso</p>
+                        <div className="flex flex-col gap-4">
+                            {personalProjects.map((project, index) => (
                                 <ProjectRow
                                     key={index}
                                     url={project.url}
