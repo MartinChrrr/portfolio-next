@@ -6,6 +6,7 @@ import { BadgeSkills } from "@/app/_components/BadgeSkills";
 import { Card } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
 import type { Project, ArchStage, KeyFigure } from "@/app/_data/projects";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const ArchDiagram = ({ stages }: { stages: ArchStage[] }) => (
   <Card className="p-6 overflow-x-auto">
@@ -204,6 +205,32 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
             </div>
           </div>
         )}
+
+         {project.images.length > 0 && (
+          <div>
+            <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
+              Screenshots
+            </h3>
+            <Card className="p-6">
+              <Carousel opts={{ loop: true }} className="mx-12">
+                <CarouselContent>
+                  {project.images.map((image, index) => (
+                    <CarouselItem key={index}>
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="rounded-lg w-full object-cover"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </Card>
+          </div>
+        )}
+
 
         {/* Links */}
         {project.links.length > 0 && (

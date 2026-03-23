@@ -249,35 +249,35 @@ export const projects: Project[] = [
   ],
   images: [
     {
-    src: "/images/RGAAudit/1.png",
+    src: "/images/rgaaudit/1.png",
     alt: "Page d'accueil de RGAAudit",
   },
   {
-    src: "/images/RGAAudit/2.png",
+    src: "/images/rgaaudit/2.png",
     alt: "Page de configuration du crawl",
   },
   {
-    src: "/images/RGAAudit/3.png",
+    src: "/images/rgaaudit/3.png",
     alt: "Page de rapport d'audit",
   },
   {
-    src: "/images/RGAAudit/4.png",
+    src: "/images/rgaaudit/4.png",
     alt: "Page de détail du rapport",
   },
   {
-    src: "/images/RGAAudit/5.png",
+    src: "/images/rgaaudit/5.png",
     alt: "Exemple d'annexe de rapport",
   },
   {
-    src: "/images/RGAAudit/6.png",
+    src: "/images/rgaaudit/6.png",
     alt: "Exemple de mapping RGAA ↔ WCAG ↔ axe-core",
   },
   {
-    src: "/images/RGAAudit/7.png",
+    src: "/images/rgaaudit/7.png",
     alt: "Exemple de détection d'overlay d'accessibilité tiers",
   },
   {
-    src: "/images/RGAAudit/8.png",
+    src: "/images/rgaaudit/8.png",
     alt: "Exemple de progression en temps réel via SSE",
   }
 ],
