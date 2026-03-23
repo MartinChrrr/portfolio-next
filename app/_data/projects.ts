@@ -325,7 +325,57 @@ export const projects: Project[] = [
         url: "https://github.com/MartinChrrr/survive",
       },
     ],
-  },
+  },{
+  slug: "spoony",
+  title: "Spoony",
+  subtitle: "Concepteur & Développeur Fullstack",
+  description:
+    "Application mobile de gestion du quotidien basée sur la spoon theory, conçue pour les personnes vivant avec de la fatigue chronique. L'app aide à prendre des décisions adaptées à l'énergie réelle du jour, sans culpabilité.",
+  problems:
+    "Les outils de productivité existants sont conçus pour optimiser le rendement, ce qui les rend inadaptés — voire culpabilisants — pour les personnes en situation de handicap ou atteintes de maladies chroniques. L'énergie quotidienne y est traitée comme une constante, alors qu'elle est fluctuante et limitée.",
+  context:
+    "Projet personnel conçu de A à Z : product design, wireframes (23 écrans, WCAG AA), architecture backend hexagonale et application React Native. L'état zéro énergie (0🥄) est un concept de premier ordre — pas un cas limite — et déclenche des comportements métier dédiés.",
+  role: "Concepteur unique — product design, architecture, développement backend et frontend",
+  highlights: [
+    "Architecture hexagonale (ports & adapters) : domaine métier totalement découplé de Spring Boot",
+    "22 endpoints REST (format JSend), JWT avec refresh tokens et vérification email stricte",
+    "État 0🥄 en concept de premier ordre : déclenche un bulk postpone automatique de toutes les tâches du jour",
+    "Moteur de suggestions adaptatif basé sur le budget cuillères restant et l'importance des tâches",
+    "Internationalisation via clés de traduction côté backend + react-i18next côté frontend — aucun redéploiement pour les mises à jour de contenu",
+    "Conformité RGPD : endpoint de suppression de compte avec cascade complète",
+    "TDD comme documentation vivante — les tests définissent le comportement avant l'implémentation",
+  ],
+  technologies: [
+    "React Native",
+    "NativeWind",
+    "TypeScript",
+    "Java 21",
+    "Spring Boot",
+    "PostgreSQL",
+    "Flyway",
+    "Docker",
+    "JWT",
+    "SpringDoc OpenAPI",
+  ],
+  images: [],
+  type: "pro",
+  confidential: false,
+  links: [],
+  architecture: [
+    [{ label: "React Native + NativeWind", sub: "Mobile (iOS / Android)" }],
+    [{ label: "Spring Boot 3 — API REST", sub: "22 endpoints · JSend · JWT" }],
+    [
+      { label: "Domain (Hexagonal)", sub: "Ports & Adapters" },
+      { label: "Flyway", sub: "Migrations" },
+    ],
+    [{ label: "PostgreSQL 16", sub: "Base de données" }],
+  ],
+  keyFigures: [
+    { value: "22", label: "Endpoints API" },
+    { value: "23", label: "Écrans designés" },
+    { value: "0🥄", label: "État premier ordre" },
+  ],
+},
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
