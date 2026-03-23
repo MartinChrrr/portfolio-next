@@ -218,6 +218,90 @@ export const projects: Project[] = [
     ],
   },
   {
+  slug: "rgaaudit",
+  title: "RGAAudit",
+  subtitle: "Créateur & Développeur Fullstack",
+  description:
+    "Outil open-source d'aide à l'audit d'accessibilité web selon le référentiel RGAA 4.1 français. Il automatise les vérifications automatisables (~30-50% des critères) et fournit à l'auditeur humain des données structurées pour traiter efficacement les critères manuels restants.",
+  problems:
+    "En France, les audits RGAA sont réalisés manuellement par des cabinets spécialisés, coûteux et longs. Aucun outil open-source n'existait pour générer un pré-rapport structuré selon la grille RGAA, rendre le mapping RGAA ↔ WCAG ↔ moteur d'audit transparent et auditable, et fournir les annexes nécessaires à la vérification manuelle.",
+  context:
+    "Projet personnel né d'un besoin réel identifié dans l'écosystème de l'accessibilité numérique français. Conçu local-first (aucune donnée ne quitte la machine) et open-source, avec une architecture pensée pour accueillir à terme une distribution desktop via Tauri.",
+  role: "Concepteur et développeur unique — de la spécification technique au développement",
+  highlights: [
+    "Architecture monorepo npm workspaces (core / server / web / cli) prévue pour la compatibilité Tauri",
+    "Moteur d'audit axe-core découplé via adapter pattern — remplaçable sans toucher au reste de l'application",
+    "Mapping RGAA ↔ WCAG ↔ axe-core transparent et auditable, stocké dans un fichier JSON versionné",
+    "Crawl automatique via sitemap.xml et crawl récursif, avec validation et édition manuelle de la liste de pages",
+    "Progression en temps réel via Server-Sent Events (SSE)",
+    "Génération de rapport HTML interactif avec annexes structurées pour l'auditeur humain",
+    "Détection des overlays d'accessibilité tiers (accessiBe, UserWay, AudioEye…)",
+  ],
+  technologies: [
+    "Node.js",
+    "Playwright",
+    "axe-core",
+    "Express",
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "TypeScript",
+  ],
+  images: [
+    {
+    src: "/images/RGAAudit/1.png",
+    alt: "Page d'accueil de RGAAudit",
+  },
+  {
+    src: "/images/RGAAudit/2.png",
+    alt: "Page de configuration du crawl",
+  },
+  {
+    src: "/images/RGAAudit/3.png",
+    alt: "Page de rapport d'audit",
+  },
+  {
+    src: "/images/RGAAudit/4.png",
+    alt: "Page de détail du rapport",
+  },
+  {
+    src: "/images/RGAAudit/5.png",
+    alt: "Exemple d'annexe de rapport",
+  },
+  {
+    src: "/images/RGAAudit/6.png",
+    alt: "Exemple de mapping RGAA ↔ WCAG ↔ axe-core",
+  },
+  {
+    src: "/images/RGAAudit/7.png",
+    alt: "Exemple de détection d'overlay d'accessibilité tiers",
+  },
+  {
+    src: "/images/RGAAudit/8.png",
+    alt: "Exemple de progression en temps réel via SSE",
+  }
+],
+  type: "pro",
+  confidential: false,
+  links: [
+    {
+      label: "GitHub",
+      url: "https://github.com/MartinChrrr/RGAAudit",
+    },
+  ],
+  architecture: [
+    [{ label: "React + Vite", sub: "Frontend" }],
+    [{ label: "Express + SSE", sub: "API & temps réel" }],
+    [{ label: "Playwright + axe-core", sub: "Crawl & audit" }],
+    [{ label: "RGAA 4.1 JSON", sub: "Mapping transparent" }],
+  ],
+  keyFigures: [
+    { value: "4", label: "Packages monorepo" },
+    { value: "~50%", label: "Critères automatisés" },
+    { value: "106", label: "Critères RGAA couverts (roadmap)" },
+  ],
+},
+  {
     slug: "survive",
     title: "Survive",
     subtitle: "Jeu de survie en navigateur",
