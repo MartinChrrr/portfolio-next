@@ -328,7 +328,7 @@ export const projects: Project[] = [
   },{
   slug: "spoony",
   title: "Spoony",
-  subtitle: "Concepteur & Développeur Fullstack",
+  subtitle: "Application mobile de gestion du quotidien basée sur la théorie des cuillères",
   description:
     "Application mobile de gestion du quotidien basée sur la spoon theory, conçue pour les personnes vivant avec de la fatigue chronique. L'app aide à prendre des décisions adaptées à l'énergie réelle du jour, sans culpabilité.",
   problems:
@@ -357,10 +357,21 @@ export const projects: Project[] = [
     "JWT",
     "SpringDoc OpenAPI",
   ],
-  images: [],
+  images: [
+    
+  ],
   type: "pro",
   confidential: false,
-  links: [],
+  links: [
+      {
+        label: "GitHub backend",
+        url: "https://github.com/MartinChrrr/Spoony-back",
+      },
+      //       {
+      //   label: "GitHub backend",
+      //   url: "https://github.com/MartinChrrr/Spoony-back",
+      // },
+  ],
   architecture: [
     [{ label: "React Native + NativeWind", sub: "Mobile (iOS / Android)" }],
     [{ label: "Spring Boot 3 — API REST", sub: "22 endpoints · JSend · JWT" }],
