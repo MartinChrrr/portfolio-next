@@ -388,7 +388,7 @@ export const projects: Project[] = [
   ],
 },
 {
-  slug: "application gestion-devis-factures",
+  slug: "application-gestion-devis-factures",
   title: "Application de Gestion Devis & Factures",
   subtitle: "API REST Django — Outil de facturation pour auto-entrepreneurs",
   description: "Application de gestion de devis et factures pour auto-entrepreneurs, développée en équipe dans le cadre de la formation. Back-end Django REST Framework avec authentification JWT, export PDF et tests unitaires. Front React développé en parallèle comme base de travail pour l'équipe.",

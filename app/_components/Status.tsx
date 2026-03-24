@@ -1,26 +1,32 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
 import { ProjectRow, ProjectRowProps } from "./ProjectRow"
-import { AccessibilityIcon, EyeIcon, GithubIcon } from "lucide-react"
+import { AccessibilityIcon, Building, EyeIcon, GithubIcon } from "lucide-react"
 import { WorkRow, WorkRowProps } from "./WorkRow"
 import { EducationRow, EducationRowProps } from "./EducationRow"
 
 const proProjects : ProjectRowProps[] = [
     {
         url: "/projects/hyperfiction",
-        logo: GithubIcon,
+        logo: Building,
         title: "Hyperfiction",
         description:"Applications XR éducatives pour les métiers du BTP"
     },
     {
         url: "/projects/makeprops",
-        logo: GithubIcon,
+        logo: Building,
         title: "MakeProps",
         description:"API REST et applications front-end React"
     },
 ]
 
 const ecoleProjects : ProjectRowProps[] = [
+    {
+        url: "/projects/application-gestion-devis-factures",
+        logo: GithubIcon,
+        title: "Application de Gestion Devis & Factures",
+        description:"Application de gestion de devis et factures"
+    },
     {
         url: "/projects/storysparkle",
         logo: GithubIcon,
