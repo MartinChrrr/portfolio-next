@@ -13,9 +13,10 @@ return (
             {/* <h2 className="font-caption text-4xl text-glow font-bold text-white">Martin Charrier</h2> */}
             <h2 className="font-caption text-3xl text-glow text-white">Concepteur Développeur d'Applications</h2>
             <p className="text-justify">
-                Développeur fullstack avec une première expérience professionnelle en alternance (API PHP/Node, React SSR, PostgreSQL, Neo4j),
-                je recherche une alternance pour valider mon titre Concepteur Développeur d'Applications (Bac+3). 
-                <br/>Autonome et rigoureux, j'aime résoudre des problèmes techniques concrets et monter en compétences au quotidien.
+                Développeur fullstack et C# en alternance : applications web et XR conçues et livrées en production, de l'API à la mise en prod.
+                <br/>En recherche d'alternance pour monter en compétence sur des projets à plus fort enjeu.
+                <br/>Stack principale : React, Next.js, Node.js, PHP, C#, Java, Python, PostgreSQL, Neo4j.
+                <br/>
 
             </p>
         </div>
