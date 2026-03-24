@@ -413,8 +413,8 @@ export const projects: Project[] = [
   type: "ecole",
   confidential: false,
   links: [
-    { label: "GitHub Back-end", url: "" },
-    { label: "GitHub Front-end", url: "" },
+    // { label: "GitHub Back-end", url: "" },
+    // { label: "GitHub Front-end", url: "" },
   ],
   architecture: [
     [{ label: "React + React Router + React Query", sub: "Front-end" }],
