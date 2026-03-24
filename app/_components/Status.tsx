@@ -153,7 +153,7 @@ export const Status = () => {
                         </div>
                     </Card>
                     <Card className="w-full p-4 flex flex-col gap-2">
-                        <p className="text-primary text-lg">Projets école</p>
+                        <p className="text-primary text-lg">Projets scolaires</p>
                         <div className="flex flex-col gap-4">
                             {ecoleProjects.map((project, index) => (
                                 <ProjectRow
@@ -167,7 +167,7 @@ export const Status = () => {
                         </div>
                     </Card>
                       <Card className="w-full p-4 flex flex-col gap-2">
-                        <p className="text-primary text-lg">Projets perso</p>
+                        <p className="text-primary text-lg">Projets personnels</p>
                         <div className="flex flex-col gap-4">
                             {personalProjects.map((project, index) => (
                                 <ProjectRow
