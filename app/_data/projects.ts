@@ -387,6 +387,51 @@ export const projects: Project[] = [
     { value: "0🥄", label: "État premier ordre" },
   ],
 },
+{
+  slug: "application gestion-devis-factures",
+  title: "Application de Gestion Devis & Factures",
+  subtitle: "API REST Django — Outil de facturation pour auto-entrepreneurs",
+  description: "Application de gestion de devis et factures pour auto-entrepreneurs, développée en équipe dans le cadre de la formation. Back-end Django REST Framework avec authentification JWT, export PDF et tests unitaires. Front React développé en parallèle comme base de travail pour l'équipe.",
+  problems: "Les auto-entrepreneurs n'ont pas toujours accès à des outils de facturation simples et autonomes. L'enjeu technique était de livrer une API robuste avec gestion des droits, export de documents conformes et une base front utilisable par des développeurs juniors.",
+  context: "Projet réalisé en équipe de 3 dans le cadre de la formation CDA. Avec une grande disparité de niveaux dans l'équipe, j'ai assuré le rôle de tech lead informel : architecture du projet, organisation en sprints, développement des modules principaux et accompagnement des coéquipiers.",
+  role: "Tech lead informel — architecture, modélisation BDD, Docker, authentification JWT, module clients, module devis (export PDF), écriture des tests, bases du front React, pair programming avec les coéquipiers en difficulté",
+  highlights: [
+    "Architecture du projet et modélisation de la base de données avec les contraintes Django ORM",
+    "Authentification JWT complète (register, login, refresh, logout, profil)",
+    "Module devis avec export PDF via WeasyPrint",
+    "Écriture des tests unitaires sur les modules développés",
+    "Configuration Docker Compose pour l'environnement de développement",
+    "Base du front React posée (architecture, routing React Router, appels API avec React Query) pour reprise par l'équipe",
+    "Accompagnement des coéquipiers : pair programming, initiation à Postman et au fonctionnement des API REST, bases React pour la montée en compétences",
+  ],
+  technologies: [
+    "Python", "Django", "Django REST Framework",
+    "PostgreSQL", "JWT", "WeasyPrint",
+    "Docker", "React", "React Router", "React Query", "TypeScript"
+  ],
+  images: [],
+  type: "ecole",
+  confidential: false,
+  links: [
+    { label: "GitHub Back-end", url: "" },
+    { label: "GitHub Front-end", url: "" },
+  ],
+  architecture: [
+    [{ label: "React + React Router + React Query", sub: "Front-end" }],
+    [{ label: "Django REST Framework + JWT", sub: "API REST" }],
+    [
+      { label: "Django ORM + Serializers", sub: "Modélisation" },
+      { label: "WeasyPrint", sub: "Export PDF" },
+    ],
+    [{ label: "PostgreSQL 15", sub: "Base de données" }],
+  ],
+  keyFigures: [
+    { value: "48", label: "Endpoints API" },
+    { value: "6", label: "Modules" },
+    { value: "PDF", label: "Export devis" },
+    { value: "4", label: "Sprints" },
+  ],
+}
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
