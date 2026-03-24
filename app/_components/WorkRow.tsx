@@ -20,7 +20,7 @@ export const WorkRow = (props: WorkRowProps) => {
                 <p className="text-muted-foreground text-base">{props.description}</p>
             </div>
             <div className="ml-auto">
-                <p className="text-muted-foreground text-sm">{props.date}</p>
+                <p className="text-muted-foreground text-base">{props.date}</p>
             </div>
         </Link>
     )

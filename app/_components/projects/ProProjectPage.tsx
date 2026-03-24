@@ -25,7 +25,7 @@ const ArchDiagram = ({ stages }: { stages: ArchStage[] }) => (
                 <p className="font-mono text-base font-semibold text-primary">
                   {item.label}
                 </p>
-                <p className="text-sm text-muted-foreground">{item.sub}</p>
+                <p className="text-base text-muted-foreground">{item.sub}</p>
               </div>
             ))}
           </div>
@@ -55,7 +55,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
               {project.title}
             </h2>
             {project.confidential && (
-              <span className="inline-flex items-center gap-1 text-sm text-muted-foreground border border-muted-foreground/30 rounded-full px-2.5 py-0.5">
+              <span className="inline-flex items-center gap-1 text-base text-muted-foreground border border-muted-foreground/30 rounded-full px-2.5 py-0.5">
                 <Lock className="h-3 w-3" />
                 Confidentiel
               </span>
@@ -192,7 +192,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
                   <div className="flex items-center gap-2 mb-2">
                     <h4 className="font-semibold text-white">{sub.title}</h4>
                     {sub.autonomous && (
-                      <span className="text-sm text-primary border border-primary/30 bg-primary/10 rounded-full px-2 py-0.5">
+                      <span className="text-base text-primary border border-primary/30 bg-primary/10 rounded-full px-2 py-0.5">
                         Autonome
                       </span>
                     )}
@@ -252,7 +252,7 @@ export const ProProjectPage = ({ project }: { project: Project }) => {
 
         {/* Confidentiality footer */}
         {project.confidential && (
-          <p className="text-center text-sm text-muted-foreground/60 italic border-t border-border/30 pt-4">
+          <p className="text-center text-base text-muted-foreground/60 italic border-t border-border/30 pt-4">
             Projet confidentiel — visuels non diffusables
           </p>
         )}
