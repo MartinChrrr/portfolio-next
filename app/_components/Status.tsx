@@ -112,7 +112,7 @@ export const Status = () => {
             <div className="flex max-lg:flex-col items-start gap-4">
                 <div className="flex-[2] w-full flex flex-col h-full gap-4">
                     <Card className="p-4 flex-1">
-                        <p className=" text-lg text-primary">Expériences professionnelles</p>
+                        <h3 className="text-lg text-primary">Expériences professionnelles</h3>
                         <div className="flex flex-col gap-4">
                             {
                                 works.map((work, index) =>(
@@ -128,7 +128,7 @@ export const Status = () => {
                         </div>
                     </Card>
                     <Card className="p-4 flex-1">
-                        <p className="text-primary text-lg">Formations</p>
+                        <h3 className="text-lg text-primary">Formations</h3>
                         <div className="flex flex-col gap-4">
                             {educations.map((education, index)=>(
                                 <EducationRow 
@@ -145,7 +145,7 @@ export const Status = () => {
                 </div>
                 <div className="flex-[3] w-full flex flex-col gap-4">
                     <Card className="w-full p-4 flex flex-col gap-2">
-                        <p className="text-primary text-lg">Projets professionnels</p>
+                        <h3 className="text-lg text-primary">Projets professionnels</h3>
                         <div className="flex flex-col gap-4">
                             {proProjects.map((project, index) => (
                                 <ProjectRow
@@ -159,7 +159,7 @@ export const Status = () => {
                         </div>
                     </Card>
                     <Card className="w-full p-4 flex flex-col gap-2">
-                        <p className="text-primary text-lg">Projets scolaires</p>
+                        <h3 className="text-lg text-primary">Projets scolaires</h3>
                         <div className="flex flex-col gap-4">
                             {ecoleProjects.map((project, index) => (
                                 <ProjectRow
@@ -173,7 +173,7 @@ export const Status = () => {
                         </div>
                     </Card>
                       <Card className="w-full p-4 flex flex-col gap-2">
-                        <p className="text-primary text-lg">Projets personnels</p>
+                        <h3 className="text-lg text-primary">Projets personnels</h3>
                         <div className="flex flex-col gap-4">
                             {personalProjects.map((project, index) => (
                                 <ProjectRow
