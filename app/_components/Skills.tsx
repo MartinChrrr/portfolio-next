@@ -37,7 +37,8 @@ export const Skills = () => {
         "Linux",
         "Docker", 
         "Cursor", 
-        "Claude Code"
+        "Claude Code",
+        "Jira"
     ]
 
     return (
