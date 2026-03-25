@@ -48,7 +48,7 @@ export const Contact = () => {
                             </div>
                             <div>
                                 <p className="font-semibold text-base text-muted-foreground">Localisation</p>
-                                <p>Aix-les-Bains, France</p>
+                                <p>Chambéry, France</p>
                             </div>
                         </Link>
                      </div>
