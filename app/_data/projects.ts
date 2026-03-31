@@ -464,7 +464,42 @@ export const projects: Project[] = [
     "TypeScript",
     "Tailwind CSS",
   ],
-  images: [],
+  images: [
+    {
+      src: "/images/finol/finol1.png",
+      alt: "Interface React de Finol avec formulaire de calcul et résultat affiché",
+    },
+    {
+      src: "/images/finol/finol2.png",
+      alt: "Interface React de Finol avec formulaire de calcul et résultat affiché",
+    },
+    {
+      src: "/images/finol/finol3.png",
+      alt: "Interface React de Finol avec formulaire de calcul et résultat affiché",
+    },
+    {
+      src: "/images/finol/finol4.png",
+      alt: "Interface React de Finol avec formulaire de calcul et résultat affiché",
+    },
+    {
+      src: "/images/finol/finol5.png",
+      alt: "Interface React de Finol avec formulaire de calcul et résultat affiché",
+    }
+  ],
+  codeImages: [
+    {
+      src: "/images/finol/finolCode0.png",
+      alt: "Code COBOL de Finol",
+   },
+   {
+    src: "/images/finol/finolCode1.png",
+    alt: "Code Java de Finol avec appel ProcessBuilder",
+   },
+   {
+    src: "/images/finol/finolCode2.png",
+    alt: "Dockerfile multi-stage de Finol",
+   },
+],
   type: "pro",
   confidential: false,
   links: [
