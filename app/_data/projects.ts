@@ -431,7 +431,60 @@ export const projects: Project[] = [
     { value: "PDF", label: "Export devis" },
     { value: "4", label: "Sprints" },
   ],
-}
+},
+{
+  slug: "finol",
+  title: "Finol",
+  subtitle: "Projet de découverte du COBOL dans une stack moderne",
+  description:
+    "Projet personnel conçu pour explorer le COBOL dans un contexte concret. Un programme COBOL effectue les calculs financiers (prêt, cotisation, intérêts, pénalités) et est appelé depuis une API Spring Boot via ProcessBuilder. Le tout est piloté depuis une interface React.",
+  problems:
+    "Le COBOL reste omniprésent dans le secteur bancaire et assurantiel, mais peu de ressources permettent de comprendre concrètement comment il s'interface avec une stack moderne. L'objectif était de se confronter à la syntaxe particulière du langage (divisions, typage PIC, déclaration stricte des variables, gestion mémoire fixe à la compilation) et de comprendre le rôle du COBOL comme moteur de calcul métier découplé de la couche applicative.",
+  context:
+    "Projet de découverte réalisé en autonomie. Le parallèle avec un environnement mainframe réel est explicite : PostgreSQL remplace DB2 et ProcessBuilder remplace un appel CICS. La logique métier COBOL est strictement identique dans les deux cas.",
+  role: "Développeur unique, de la conception au déploiement",
+  highlights: [
+    "Découverte du COBOL : structure en divisions, typage PIC, EVALUATE, paragraphes nommés",
+    "Bridge Java vers COBOL via ProcessBuilder (stdin pour les paramètres, stdout pour le résultat)",
+    "4 types de calcul financier : mensualité de prêt, cotisation assurance, intérêts composés, pénalité de retard",
+    "API REST Spring Boot sécurisée avec JWT",
+    "Dockerfile multi-stage : compilation du binaire COBOL et build du JAR Spring Boot dans la même image",
+    "Interface React pour créer des opérations et déclencher les calculs",
+  ],
+  technologies: [
+    "GnuCOBOL",
+    "Java 21",
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "PostgreSQL",
+    "Docker",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+  ],
+  images: [],
+  type: "pro",
+  confidential: false,
+  links: [
+    {
+      label: "GitHub",
+      url: "https://github.com/MartinChrrr/finol",
+    },
+  ],
+  architecture: [
+    [{ label: "React + Vite", sub: "Front-end" }],
+    [{ label: "Spring Boot + JWT", sub: "API REST" }],
+    [{ label: "CobolService", sub: "Bridge ProcessBuilder" }],
+    [{ label: "GnuCOBOL", sub: "Moteur de calcul" }],
+    [{ label: "PostgreSQL", sub: "Données (DB2 en prod)" }],
+  ],
+  keyFigures: [
+    { value: "4", label: "Calculs COBOL" },
+    { value: "13", label: "Endpoints REST" },
+    { value: "DB2", label: "Parallèle mainframe" },
+  ],
+},
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
