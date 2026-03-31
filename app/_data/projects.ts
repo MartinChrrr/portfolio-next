@@ -19,6 +19,7 @@ export type Project = {
   highlights: string[];
   technologies: string[];
   images: { src: string; alt: string }[];
+  codeImages?: { src: string; alt: string }[];
   type: "pro" | "ecole";
   confidential: boolean;
   links: { label: string; url: string }[];

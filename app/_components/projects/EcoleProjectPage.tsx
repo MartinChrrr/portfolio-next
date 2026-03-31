@@ -150,6 +150,32 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
           </div>
         )}
 
+        {/* Code carousel */}
+        {project.codeImages && project.codeImages.length > 0 && (
+          <div>
+            <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
+              Code
+            </h3>
+            <Card className="p-6">
+              <Carousel opts={{ loop: true }} className="mx-12">
+                <CarouselContent>
+                  {project.codeImages.map((image, index) => (
+                    <CarouselItem key={index}>
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="rounded-lg w-full object-cover"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </Card>
+          </div>
+        )}
+
         {/* Links */}
         {project.links.length > 0 && (
           <div className="flex flex-wrap gap-3">
