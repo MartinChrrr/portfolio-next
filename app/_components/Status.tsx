@@ -53,6 +53,12 @@ const personalProjects : ProjectRowProps[] = [
         logo: AccessibilityIcon,
         title: "Spoony",
         description:"Application de gestion du quotidien se basant sur la théorie des cuillères (WIP)"
+    },
+    {
+        url: "/projects/finol",
+        logo: Building,
+        title: "Finol",
+        description:"Projet de découverte du COBOL dans une stack moderne"
     }
 ]
 
