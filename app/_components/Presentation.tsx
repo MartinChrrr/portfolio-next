@@ -14,7 +14,6 @@ return (
             <h2 className="font-caption text-3xl text-glow text-white">Concepteur Développeur d'Applications</h2>
             <p className="text-justify">
                 Développeur fullstack et C# en alternance : applications web et XR conçues et livrées en production, de l'API à la mise en prod.
-                <br/>En recherche d'alternance pour monter en compétence sur des projets à plus fort enjeu.
                 <br/>Stack principale : React, Next.js, Node.js, PHP, C#, Java, Python, PostgreSQL, Neo4j.
                 <br/>
 

@@ -54,21 +54,28 @@ const personalProjects : ProjectRowProps[] = [
         title: "Spoony",
         description:"Application de gestion du quotidien se basant sur la théorie des cuillères (WIP)"
     },
-    {
-        url: "/projects/finol",
-        logo: Building,
-        title: "Finol",
-        description:"Projet de découverte du COBOL dans une stack moderne"
-    }
+    // {
+    //     url: "/projects/finol",
+    //     logo: Building,
+    //     title: "Finol",
+    //     description:"Projet de découverte du COBOL dans une stack moderne"
+    // }
 ]
 
 const works: WorkRowProps[] = [
+    {
+        url:"/projects/Esker",
+        title: "MakeProps",
+        image: "/images/esker.svg",
+        description: "Développeur WPF",
+        date: "2026-Présent"
+    },
     {
         url:"/projects/makeprops",
         title: "MakeProps",
         image: "/images/makeprops.svg",
         description: "Développeur Fullstack",
-        date: "2025-Present"
+        date: "2025-2026"
     },
     {
         url:"/projects/hyperfiction",
