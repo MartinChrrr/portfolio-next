@@ -65,7 +65,7 @@ const personalProjects : ProjectRowProps[] = [
 const works: WorkRowProps[] = [
     {
         url:"/projects/Esker",
-        title: "MakeProps",
+        title: "Esker",
         image: "/images/esker.svg",
         description: "Développeur WPF",
         date: "2026-Présent"
