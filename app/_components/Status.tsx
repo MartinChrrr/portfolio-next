@@ -1,206 +1,87 @@
-import { Card } from "@/components/ui/card"
-import { Section } from "./Section"
-import { ProjectRow, ProjectRowProps } from "./ProjectRow"
-import { AccessibilityIcon, Building, EyeIcon, GithubIcon } from "lucide-react"
-import { WorkRow, WorkRowProps } from "./WorkRow"
-import { EducationRow, EducationRowProps } from "./EducationRow"
+import {
+  AccessibilityIcon,
+  Building,
+  EyeIcon,
+  GithubIcon,
+  type LucideIcon,
+} from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { Card } from "@/components/ui/card";
+import {
+  getSiteContent,
+  type ProjectSummary,
+} from "@/app/_data/projects";
+import { EducationRow } from "./EducationRow";
+import { ProjectRow } from "./ProjectRow";
+import { Section } from "./Section";
+import { WorkRow } from "./WorkRow";
 
-const proProjects : ProjectRowProps[] = [
-    {
-        url: "/projects/hyperfiction",
-        logo: Building,
-        title: "Hyperfiction",
-        description:"Applications XR éducatives pour les métiers du BTP"
-    },
-    {
-        url: "/projects/makeprops",
-        logo: Building,
-        title: "MakeProps",
-        description:"API REST et applications front-end React"
-    },
-]
-
-const ecoleProjects : ProjectRowProps[] = [
-    {
-        url: "/projects/application-gestion-devis-factures",
-        logo: GithubIcon,
-        title: "Application de Gestion Devis & Factures",
-        description:"Application de gestion de devis et factures"
-    },
-    {
-        url: "/projects/storysparkle",
-        logo: GithubIcon,
-        title: "StorySparkle",
-        description:"Crée une histoire unique à partir de ton image"
-    },
-    {
-        url: "/projects/gamesync",
-        logo: GithubIcon,
-        title: "GameSync",
-        description:"Réseau social pour les gamers"
-    },
-]
-
-const personalProjects : ProjectRowProps[] = [
-    {
-        url: "/projects/rgaaudit",
-        logo: EyeIcon,
-        title: "RGAAudit",
-        description:"Outil d'audit RGAA(WIP)"
-    },
-    {
-        url: "/projects/spoony",
-        logo: AccessibilityIcon,
-        title: "Spoony",
-        description:"Application de gestion du quotidien se basant sur la théorie des cuillères (WIP)"
-    },
-    // {
-    //     url: "/projects/finol",
-    //     logo: Building,
-    //     title: "Finol",
-    //     description:"Projet de découverte du COBOL dans une stack moderne"
-    // }
-]
-
-const works: WorkRowProps[] = [
-    {
-        url:"/projects/Esker",
-        title: "Esker",
-        image: "/images/esker.svg",
-        description: "Développeur WPF",
-        date: "2026-Présent"
-    },
-    {
-        url:"/projects/makeprops",
-        title: "MakeProps",
-        image: "/images/makeprops.svg",
-        description: "Développeur Fullstack",
-        date: "2025-2026"
-    },
-    {
-        url:"/projects/hyperfiction",
-        title: "Hyperfiction",
-        image: "/images/hyperfiction.png",
-        description: "Développeur C#",
-        date: "2024-2025"
-    },
-    {
-        url:"https://residences-stella.com/",
-        title: "Stella Management",
-        image: "/images/stella.svg",
-        description: "Réceptionniste",
-        date: "2017-2023"
-    }
-]
-
-const educations: EducationRowProps[] =[
-    {
-        url:"https://www.francecompetences.fr/recherche/rncp/37873/",
-        title: "Concepteur Développeur d'Applications",
-        image: "/images/handigital.png",
-        school: "Handigital",
-        date: "2025-Present"
-    },
-    {
-        url:"https://www.francecompetences.fr/recherche/rncp/37674/",
-        title: "Développeur Web et Web Mobile",
-        image: "/images/handigital.png",
-        school: "Handigital",
-        date: "2024-2025"
-    },
-    {
-        url:"https://handigital-formation.com/",
-        title: "Développeur Unity/Unreal",
-        image: "/images/handigital.png",
-        school: "Handigital",
-        date: "2023-2024"
-    },
-
-]
+const projectIcons: Record<ProjectSummary["icon"], LucideIcon> = {
+  accessibility: AccessibilityIcon,
+  building: Building,
+  eye: EyeIcon,
+  github: GithubIcon,
+};
 
 export const Status = () => {
-    return(
-        <Section classname=" scroll-mt-20 " id="experiences">
-            <h2 className="font-caption text-3xl text-glow mb-6 text-white">Expériences</h2>
-            <div className="flex max-lg:flex-col items-start gap-4">
-                <div className="flex-[2] w-full flex flex-col h-full gap-4">
-                    <Card className="p-4 flex-1">
-                        <h3 className="text-lg text-primary">Expériences professionnelles</h3>
-                        <div className="flex flex-col gap-4">
-                            {
-                                works.map((work, index) =>(
-                                <WorkRow
-                                key = {index}
-                                url={work.url}
-                                title={work.title}
-                                image={work.image}
-                                description={work.description}
-                                date={work.date} />    
-                            )
-                            )}
-                        </div>
-                    </Card>
-                    <Card className="p-4 flex-1">
-                        <h3 className="text-lg text-primary">Formations</h3>
-                        <div className="flex flex-col gap-4">
-                            {educations.map((education, index)=>(
-                                <EducationRow 
-                                key={index}
-                                url={education.url}
-                                title={education.title}
-                                image={education.image}
-                                school={education.school}
-                                date={education.date}
-                                />
-                            ))}
-                        </div>
-                    </Card>
-                </div>
-                <div className="flex-[3] w-full flex flex-col gap-4">
-                    <Card className="w-full p-4 flex flex-col gap-2">
-                        <h3 className="text-lg text-primary">Projets professionnels</h3>
-                        <div className="flex flex-col gap-4">
-                            {proProjects.map((project, index) => (
-                                <ProjectRow
-                                    key={index}
-                                    url={project.url}
-                                    logo={project.logo}
-                                    title={project.title}
-                                    description={project.description}
-                                />
-                            ))}
-                        </div>
-                    </Card>
-                    <Card className="w-full p-4 flex flex-col gap-2">
-                        <h3 className="text-lg text-primary">Projets scolaires</h3>
-                        <div className="flex flex-col gap-4">
-                            {ecoleProjects.map((project, index) => (
-                                <ProjectRow
-                                    key={index}
-                                    url={project.url}
-                                    logo={project.logo}
-                                    title={project.title}
-                                    description={project.description}
-                                />
-                            ))}
-                        </div>
-                    </Card>
-                      <Card className="w-full p-4 flex flex-col gap-2">
-                        <h3 className="text-lg text-primary">Projets personnels</h3>
-                        <div className="flex flex-col gap-4">
-                            {personalProjects.map((project, index) => (
-                                <ProjectRow
-                                    key={index}
-                                    url={project.url}
-                                    logo={project.logo}
-                                    title={project.title}
-                                    description={project.description}
-                                />
-                            ))}
-                        </div>
-                    </Card>
-                </div>
+  const locale = useLocale();
+  const t = useTranslations("Home.status");
+  const { status } = getSiteContent(locale);
+  const projectGroups = [
+    { title: t("professionalProjects"), projects: status.professionalProjects },
+    { title: t("schoolProjects"), projects: status.schoolProjects },
+    { title: t("personalProjects"), projects: status.personalProjects },
+  ];
+
+  return (
+    <Section classname="scroll-mt-20" id="experiences">
+      <h2 className="font-caption text-3xl text-glow mb-6 text-white">
+        {t("title")}
+      </h2>
+      <div className="flex max-lg:flex-col items-start gap-4">
+        <div className="flex-[2] w-full flex flex-col h-full gap-4">
+          <Card className="p-4 flex-1">
+            <h3 className="text-lg text-primary">{t("work")}</h3>
+            <div className="flex flex-col gap-4">
+              {status.work.map((work) => (
+                <WorkRow key={`${work.title}-${work.date}`} {...work} />
+              ))}
             </div>
-        </Section>
-    )
-}
+          </Card>
+          <Card className="p-4 flex-1">
+            <h3 className="text-lg text-primary">{t("education")}</h3>
+            <div className="flex flex-col gap-4">
+              {status.education.map((education) => (
+                <EducationRow
+                  key={`${education.title}-${education.date}`}
+                  {...education}
+                />
+              ))}
+            </div>
+          </Card>
+        </div>
+        <div className="flex-[3] w-full flex flex-col gap-4">
+          {projectGroups.map((group) => (
+            <Card
+              className="w-full p-4 flex flex-col gap-2"
+              key={group.title}
+            >
+              <h3 className="text-lg text-primary">{group.title}</h3>
+              <div className="flex flex-col gap-4">
+                {group.projects.map((project) => (
+                  <ProjectRow
+                    key={project.url}
+                    url={project.url}
+                    logo={projectIcons[project.icon]}
+                    title={project.title}
+                    description={project.description}
+                  />
+                ))}
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
+};

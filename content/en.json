@@ -1,0 +1,896 @@
+{
+  "messages": {
+    "Metadata": {
+      "title": "Martin Charrier’s portfolio",
+      "description": "Martin Charrier’s portfolio — application developer specialising in web, mobile and XR experiences.",
+      "projectTitle": "{project} — Martin Charrier"
+    },
+    "Header": {
+      "name": "Martin Charrier",
+      "homeLabel": "Home",
+      "githubLabel": "Martin Charrier’s GitHub profile",
+      "linkedinLabel": "Martin Charrier’s LinkedIn profile",
+      "languageLabel": "Language",
+      "french": "French",
+      "english": "English"
+    },
+    "Home": {
+      "presentation": {
+        "title": "Application Designer and Developer",
+        "intro": "Full-stack and C# developer on a work-study programme: I design and deliver production-ready web and XR applications, from APIs through to deployment.",
+        "stack": "Core stack: React, Next.js, Node.js, PHP, C#, Java, Python, PostgreSQL and Neo4j.",
+        "portraitAlt": "Portrait of Martin Charrier"
+      },
+      "status": {
+        "title": "Experience",
+        "work": "Professional experience",
+        "education": "Education",
+        "professionalProjects": "Professional projects",
+        "schoolProjects": "Academic projects",
+        "personalProjects": "Personal projects"
+      },
+      "skills": {
+        "title": "Skills",
+        "languages": "Languages",
+        "frameworks": "Libraries and frameworks",
+        "softSkills": "Soft skills",
+        "tools": "Tools"
+      },
+      "contact": {
+        "title": "Get in touch!",
+        "information": "Contact details",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "socialNetworks": "Social networks",
+        "socialIntro": "Follow me on social media to keep up with my projects and share discoveries."
+      }
+    },
+    "ProjectPage": {
+      "back": "Back",
+      "confidential": "Confidential",
+      "description": "Description",
+      "context": "Context",
+      "problem": "Challenge",
+      "role": "Role",
+      "stack": "Stack",
+      "architecture": "Architecture",
+      "highlights": "Highlights",
+      "subProjects": "Sub-projects",
+      "autonomous": "Independent",
+      "screenshots": "Screenshots",
+      "code": "Code",
+      "confidentialNotice": "Confidential project — visuals cannot be shared"
+    },
+    "Dashboard": {
+      "imageAlt": "Handigital logo",
+      "placeholder": "Dashboard"
+    }
+  },
+  "status": {
+    "professionalProjects": [
+      {
+        "url": "/projects/hyperfiction",
+        "icon": "building",
+        "title": "Hyperfiction",
+        "description": "Educational XR applications for the construction industry"
+      },
+      {
+        "url": "/projects/makeprops",
+        "icon": "building",
+        "title": "MakeProps",
+        "description": "REST APIs and React front-end applications"
+      }
+    ],
+    "schoolProjects": [
+      {
+        "url": "/projects/application-gestion-devis-factures",
+        "icon": "github",
+        "title": "Quotes & Invoices Management App",
+        "description": "Quote and invoice management application"
+      },
+      {
+        "url": "/projects/storysparkle",
+        "icon": "github",
+        "title": "StorySparkle",
+        "description": "Create a unique story from your image"
+      },
+      {
+        "url": "/projects/gamesync",
+        "icon": "github",
+        "title": "GameSync",
+        "description": "A social network for gamers"
+      }
+    ],
+    "personalProjects": [
+      {
+        "url": "/projects/rgaaudit",
+        "icon": "eye",
+        "title": "RGAAudit",
+        "description": "RGAA accessibility audit tool (WIP)"
+      },
+      {
+        "url": "/projects/spoony",
+        "icon": "accessibility",
+        "title": "Spoony",
+        "description": "Daily-life management app based on spoon theory (WIP)"
+      }
+    ],
+    "work": [
+      {
+        "url": "/projects/Esker",
+        "title": "Esker",
+        "image": "/images/esker.svg",
+        "description": "WPF Developer",
+        "date": "2026–Present"
+      },
+      {
+        "url": "/projects/makeprops",
+        "title": "MakeProps",
+        "image": "/images/makeprops.svg",
+        "description": "Full-stack Developer",
+        "date": "2025–2026"
+      },
+      {
+        "url": "/projects/hyperfiction",
+        "title": "Hyperfiction",
+        "image": "/images/hyperfiction.png",
+        "description": "C# Developer",
+        "date": "2024–2025"
+      },
+      {
+        "url": "https://residences-stella.com/",
+        "title": "Stella Management",
+        "image": "/images/stella.svg",
+        "description": "Receptionist",
+        "date": "2017–2023"
+      }
+    ],
+    "education": [
+      {
+        "url": "https://www.francecompetences.fr/recherche/rncp/37873/",
+        "title": "Application Designer and Developer",
+        "image": "/images/handigital.png",
+        "school": "Handigital",
+        "date": "2025–Present"
+      },
+      {
+        "url": "https://www.francecompetences.fr/recherche/rncp/37674/",
+        "title": "Web and Mobile Web Developer",
+        "image": "/images/handigital.png",
+        "school": "Handigital",
+        "date": "2024–2025"
+      },
+      {
+        "url": "https://handigital-formation.com/",
+        "title": "Unity/Unreal Developer",
+        "image": "/images/handigital.png",
+        "school": "Handigital",
+        "date": "2023–2024"
+      }
+    ]
+  },
+  "skills": {
+    "languages": [
+      "PHP",
+      "Java",
+      "TypeScript",
+      "Python",
+      "C++",
+      "C#"
+    ],
+    "frameworks": [
+      "Spring",
+      "Vue",
+      "Unity",
+      "Tailwind",
+      "Django",
+      "Node",
+      "Express"
+    ],
+    "softSkills": [
+      "Thoroughness",
+      "Independence",
+      "Enjoying challenges",
+      "Teamwork"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Figma",
+      "Linux",
+      "Docker",
+      "Cursor",
+      "Claude Code",
+      "Jira"
+    ]
+  },
+  "contact": {
+    "email": "martin_charrier@yahoo.fr",
+    "emailHref": "mailto:martin_charrier@yahoo.fr",
+    "phone": "+33 7 81 18 94 85",
+    "phoneHref": "tel:+33781189485",
+    "location": "Chambéry, France",
+    "socialLinks": [
+      {
+        "network": "github",
+        "label": "GitHub",
+        "href": "https://github.com/MartinChrrr"
+      },
+      {
+        "network": "linkedin",
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/m-charrier/"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "slug": "makeprops",
+      "title": "MakeProps",
+      "subtitle": "Full-stack Developer",
+      "description": "Independently developed REST APIs and front-end applications for several client projects, covering a range of technical requirements from server-side rendering to graph-database modelling.",
+      "problems": "The client needed high-performance, search-friendly applications, which led to the use of server-side rendering. Some use cases also required graph data modelling where a conventional relational database had reached its limits.",
+      "context": "Developed complete web applications with 90% autonomy and occasional reviews from my mentor. Worked across the entire technical stack: back end, databases, front end and production deployment.",
+      "role": "Sole developer for most tasks",
+      "highlights": [
+        "Worked with two back-end stacks (PHP and Node.js) depending on project needs",
+        "Implemented SSR with React Router to meet SEO and performance requirements",
+        "Used Neo4j alongside PostgreSQL for use cases suited to graph data",
+        "Contributed to database design and modelling",
+        "Deployed applications to production"
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "React Router",
+        "Node.js",
+        "Express",
+        "PHP",
+        "PostgreSQL",
+        "Neo4j",
+        "Docker"
+      ],
+      "images": [],
+      "type": "pro",
+      "confidential": true,
+      "links": [],
+      "architecture": [
+        [
+          {
+            "label": "React SSR",
+            "sub": "Front end"
+          }
+        ],
+        [
+          {
+            "label": "Node / PHP",
+            "sub": "REST API"
+          }
+        ],
+        [
+          {
+            "label": "PostgreSQL",
+            "sub": "Relational"
+          },
+          {
+            "label": "Neo4j",
+            "sub": "Graph"
+          }
+        ]
+      ],
+      "keyFigures": [
+        {
+          "value": "90%",
+          "label": "Autonomy"
+        },
+        {
+          "value": "2",
+          "label": "Back-end stacks"
+        },
+        {
+          "value": "2",
+          "label": "Database types"
+        }
+      ]
+    },
+    {
+      "slug": "hyperfiction",
+      "title": "Hyperfiction",
+      "subtitle": "C# / Unity Developer",
+      "description": "Designed and developed three educational XR applications (PC/VR) in C# and Unity for the construction and industrial sectors, including two delivered entirely independently.",
+      "problems": "Training organisations faced practical equipment constraints: limited access to real vehicles for mechanics’ workshops, the need to promote training at trade fairs in an engaging way, and a requirement to teach construction standards without on-site risks. VR offered a technical solution to each challenge.",
+      "context": "Worked at an Annecy-based studio specialising in immersive experiences. Developed three educational XR applications and an internal tool that automated CAD model import tests.",
+      "role": "Lead developer — independently delivered two of the three applications from design through deployment",
+      "highlights": [
+        "Adapted applications to user feedback and the specific constraints of each deployment environment",
+        "Solved real-world constraints with technical solutions, such as replacing unavailable vehicles with VR simulation",
+        "Delivered one project across both PC and VR",
+        "Created an internal tool to automate CAD model import testing"
+      ],
+      "technologies": [
+        "C#",
+        "Unity",
+        "VR",
+        "Miro",
+        "ClickUp",
+        "Meta Quest",
+        "MetaSDK",
+        "Pico"
+      ],
+      "images": [],
+      "type": "pro",
+      "confidential": true,
+      "links": [
+        {
+          "label": "Hyperfiction website",
+          "url": "https://www.hyperfiction.fr/"
+        }
+      ],
+      "architecture": [
+        [
+          {
+            "label": "C# / Unity",
+            "sub": "Development"
+          }
+        ],
+        [
+          {
+            "label": "Build",
+            "sub": "Compilation"
+          }
+        ],
+        [
+          {
+            "label": "PC",
+            "sub": "Desktop"
+          },
+          {
+            "label": "VR",
+            "sub": "Headset"
+          }
+        ]
+      ],
+      "keyFigures": [
+        {
+          "value": "3",
+          "label": "Applications delivered"
+        },
+        {
+          "value": "2",
+          "label": "Built independently"
+        },
+        {
+          "value": "2",
+          "label": "Platforms"
+        }
+      ],
+      "subProjects": [
+        {
+          "title": "Hydrogen training promotion",
+          "description": "An interactive VR application designed to promote hydrogen standards training at trade fairs and make the course more engaging through a playful experience.",
+          "autonomous": true
+        },
+        {
+          "title": "Mechanics workshop",
+          "description": "A VR practical-training module for a mechanics school with limited access to real vehicles. VR made it possible to simulate exercises that could not be performed in real conditions.",
+          "autonomous": true
+        },
+        {
+          "title": "Construction trades",
+          "description": "A cross-platform educational application for PC and VR covering construction trades such as electrical work, industry standards and plan reading.",
+          "autonomous": false
+        }
+      ]
+    },
+    {
+      "slug": "storysparkle",
+      "title": "StorySparkle",
+      "subtitle": "AI-powered story generator",
+      "description": "An application that generates unique stories from an image uploaded by the user.",
+      "problems": "Parents do not always have the inspiration to create captivating stories for their children. The idea was to use AI to turn any image into the starting point for a personalised story.",
+      "context": "A training-course project in which the user uploads an image, the AI analyses it and generates an original story. Stories are saved and can be browsed in a catalogue.",
+      "role": "Sole developer",
+      "highlights": [
+        "Integrated the OpenAI API to generate text from images",
+        "Built a Flask back end with a PostgreSQL database",
+        "Containerised the application with Docker for deployment"
+      ],
+      "technologies": [
+        "Python",
+        "Flask",
+        "OpenROOTER API",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "images": [
+        {
+          "src": "/images/StorySparkle/LandingPage.png",
+          "alt": "StorySparkle home page"
+        },
+        {
+          "src": "/images/StorySparkle/Catalog.png",
+          "alt": "Catalogue of generated stories"
+        },
+        {
+          "src": "/images/StorySparkle/details.png",
+          "alt": "Details of a generated story"
+        }
+      ],
+      "type": "ecole",
+      "confidential": false,
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/MartinChrrr/story_maker"
+        }
+      ]
+    },
+    {
+      "slug": "gamesync",
+      "title": "GameSync",
+      "subtitle": "Social network for gamers",
+      "description": "A matchmaking platform for gamers looking for teammates with similar interests.",
+      "problems": "Gamers often struggle to find compatible teammates who share their games, schedules and skill level. Existing platforms do not offer sufficiently precise filtering for these criteria.",
+      "context": "A project completed during the Web and Mobile Web Developer programme. The full website includes registration, user profiles and a matchmaking system.",
+      "role": "Sole developer",
+      "highlights": [
+        "Developed the full stack in vanilla PHP with a MySQL database",
+        "Implemented authentication and user-profile management",
+        "Built search and matchmaking interfaces"
+      ],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS"
+      ],
+      "images": [
+        {
+          "src": "/images/Gamesync/inscription.png",
+          "alt": "GameSync registration page"
+        },
+        {
+          "src": "/images/Gamesync/inscriptioncode.png",
+          "alt": "Registration page source code"
+        },
+        {
+          "src": "/images/Gamesync/profil.png",
+          "alt": "User profile page"
+        },
+        {
+          "src": "/images/Gamesync/modifier.png",
+          "alt": "Profile editing page"
+        }
+      ],
+      "type": "ecole",
+      "confidential": false,
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/MartinChrrr/GameSync"
+        }
+      ]
+    },
+    {
+      "slug": "rgaaudit",
+      "title": "RGAAudit",
+      "subtitle": "Creator & Full-stack Developer",
+      "description": "An open-source web accessibility auditing tool based on the French RGAA 4.1 standard. It automates the checks that can be automated (around 30–50% of the criteria) and gives human auditors structured data for efficiently completing the remaining manual checks.",
+      "problems": "In France, RGAA audits are performed manually by specialist firms and are expensive and time-consuming. No open-source tool existed to generate a structured pre-report based on the RGAA grid, make the RGAA ↔ WCAG ↔ audit-engine mapping transparent and auditable, and provide the appendices required for manual verification.",
+      "context": "A personal project born from a real need in the French digital-accessibility ecosystem. It is local-first, so no data leaves the machine, and open source, with an architecture designed for a future Tauri desktop distribution.",
+      "role": "Sole designer and developer — from technical specification to implementation",
+      "highlights": [
+        "Designed an npm-workspaces monorepo (core / server / web / cli) ready for Tauri compatibility",
+        "Decoupled the axe-core audit engine through an adapter pattern so it can be replaced without changing the rest of the application",
+        "Stored the transparent, auditable RGAA ↔ WCAG ↔ axe-core mapping in a versioned JSON file",
+        "Implemented automatic discovery through sitemap.xml and recursive crawling, with validation and manual page-list editing",
+        "Streamed live progress through Server-Sent Events (SSE)",
+        "Generated interactive HTML reports with structured appendices for human auditors",
+        "Detected third-party accessibility overlays including accessiBe, UserWay and AudioEye"
+      ],
+      "technologies": [
+        "Node.js",
+        "Playwright",
+        "axe-core",
+        "Express",
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
+      "images": [
+        {
+          "src": "/images/rgaaudit/1.png",
+          "alt": "RGAAudit home page"
+        },
+        {
+          "src": "/images/rgaaudit/2.png",
+          "alt": "Crawler configuration page"
+        },
+        {
+          "src": "/images/rgaaudit/3.png",
+          "alt": "Audit report page"
+        },
+        {
+          "src": "/images/rgaaudit/4.png",
+          "alt": "Detailed report page"
+        },
+        {
+          "src": "/images/rgaaudit/5.png",
+          "alt": "Example report appendix"
+        },
+        {
+          "src": "/images/rgaaudit/6.png",
+          "alt": "Example RGAA ↔ WCAG ↔ axe-core mapping"
+        },
+        {
+          "src": "/images/rgaaudit/7.png",
+          "alt": "Example third-party accessibility-overlay detection"
+        },
+        {
+          "src": "/images/rgaaudit/8.png",
+          "alt": "Example live progress streamed through SSE"
+        }
+      ],
+      "type": "pro",
+      "confidential": false,
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/MartinChrrr/RGAAudit"
+        }
+      ],
+      "architecture": [
+        [
+          {
+            "label": "React + Vite",
+            "sub": "Front end"
+          }
+        ],
+        [
+          {
+            "label": "Express + SSE",
+            "sub": "API & live updates"
+          }
+        ],
+        [
+          {
+            "label": "Playwright + axe-core",
+            "sub": "Crawling & auditing"
+          }
+        ],
+        [
+          {
+            "label": "RGAA 4.1 JSON",
+            "sub": "Transparent mapping"
+          }
+        ]
+      ],
+      "keyFigures": [
+        {
+          "value": "4",
+          "label": "Monorepo packages"
+        },
+        {
+          "value": "~50%",
+          "label": "Automated criteria"
+        },
+        {
+          "value": "106",
+          "label": "RGAA criteria covered (roadmap)"
+        }
+      ]
+    },
+    {
+      "slug": "survive",
+      "title": "Survive",
+      "subtitle": "Browser survival game",
+      "description": "A survival game that runs directly in the browser.",
+      "problems": "An exploratory project for learning game logic — the game loop, state management and collisions — using vanilla JavaScript only.",
+      "context": "A personal project developed to deepen my JavaScript knowledge and understand game mechanics without a dedicated engine.",
+      "role": "Sole developer",
+      "highlights": [
+        "Implemented the game loop and state management in vanilla JavaScript",
+        "Used no framework or game engine — everything was built from scratch"
+      ],
+      "technologies": [
+        "JavaScript"
+      ],
+      "images": [],
+      "type": "ecole",
+      "confidential": false,
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/MartinChrrr/survive"
+        }
+      ]
+    },
+    {
+      "slug": "spoony",
+      "title": "Spoony",
+      "subtitle": "Daily-life mobile app based on spoon theory",
+      "description": "A daily-life management mobile app based on spoon theory and designed for people living with chronic fatigue. It helps users make decisions that fit their actual energy levels without guilt.",
+      "problems": "Existing productivity tools are designed to maximise output, which makes them unsuitable — and sometimes guilt-inducing — for disabled people and those living with chronic illness. They treat daily energy as a constant even though it fluctuates and is limited.",
+      "context": "A personal project designed end to end: product design, 23 WCAG AA wireframes, a hexagonal back-end architecture and a React Native application. The zero-energy state (0🥄) is a first-class concept rather than an edge case and triggers dedicated business behaviour.",
+      "role": "Sole designer — product design, architecture, back-end and front-end development",
+      "highlights": [
+        "Applied a hexagonal ports-and-adapters architecture, fully decoupling the business domain from Spring Boot",
+        "Designed 22 REST endpoints using JSend, JWT refresh tokens and strict email verification",
+        "Made 0🥄 a first-class state that automatically postpones every task scheduled for the day",
+        "Built an adaptive suggestion engine based on the remaining spoon budget and task importance",
+        "Internationalised the back end with translation keys and the front end with react-i18next, allowing content updates without redeployment",
+        "Implemented GDPR-compliant account deletion with a complete cascade",
+        "Used TDD as living documentation, defining behaviour in tests before implementation"
+      ],
+      "technologies": [
+        "React Native",
+        "NativeWind",
+        "TypeScript",
+        "Java 21",
+        "Spring Boot",
+        "PostgreSQL",
+        "Flyway",
+        "Docker",
+        "JWT",
+        "SpringDoc OpenAPI"
+      ],
+      "images": [],
+      "type": "pro",
+      "confidential": false,
+      "links": [
+        {
+          "label": "GitHub back end",
+          "url": "https://github.com/MartinChrrr/Spoony-back"
+        }
+      ],
+      "architecture": [
+        [
+          {
+            "label": "React Native + NativeWind",
+            "sub": "Mobile (iOS / Android)"
+          }
+        ],
+        [
+          {
+            "label": "Spring Boot 3 — REST API",
+            "sub": "22 endpoints · JSend · JWT"
+          }
+        ],
+        [
+          {
+            "label": "Domain (Hexagonal)",
+            "sub": "Ports & Adapters"
+          },
+          {
+            "label": "Flyway",
+            "sub": "Migrations"
+          }
+        ],
+        [
+          {
+            "label": "PostgreSQL 16",
+            "sub": "Database"
+          }
+        ]
+      ],
+      "keyFigures": [
+        {
+          "value": "22",
+          "label": "API endpoints"
+        },
+        {
+          "value": "23",
+          "label": "Designed screens"
+        },
+        {
+          "value": "0🥄",
+          "label": "First-class state"
+        }
+      ]
+    },
+    {
+      "slug": "application-gestion-devis-factures",
+      "title": "Quotes & Invoices Management App",
+      "subtitle": "Django REST API — Invoicing tool for sole traders",
+      "description": "A quotes and invoices management application for sole traders, developed as a team during the training programme. It features a Django REST Framework back end with JWT authentication, PDF exports and unit tests. A React front end was developed in parallel as a foundation for the team.",
+      "problems": "Sole traders do not always have access to simple, independent invoicing tools. The technical challenge was to deliver a robust API with permission management and compliant document exports, as well as a front-end foundation that junior developers could use.",
+      "context": "A three-person team project completed during the Application Designer and Developer programme. Because experience levels varied significantly, I acted as the informal tech lead: defining the architecture, organising sprints, developing the main modules and supporting my teammates.",
+      "role": "Informal tech lead — architecture, database modelling, Docker, JWT authentication, client and quote modules, PDF exports, tests, React foundations and pair programming with less-experienced teammates",
+      "highlights": [
+        "Designed the project architecture and database model around Django ORM constraints",
+        "Implemented complete JWT authentication: registration, login, refresh, logout and profile",
+        "Built the quotes module with PDF export through WeasyPrint",
+        "Wrote unit tests for the modules I developed",
+        "Configured Docker Compose for the development environment",
+        "Established the React front-end foundation with React Router, React Query and an API layer for the team to continue",
+        "Supported teammates through pair programming and introductions to Postman, REST APIs and React fundamentals"
+      ],
+      "technologies": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "PostgreSQL",
+        "JWT",
+        "WeasyPrint",
+        "Docker",
+        "React",
+        "React Router",
+        "React Query",
+        "TypeScript"
+      ],
+      "images": [],
+      "type": "ecole",
+      "confidential": false,
+      "links": [],
+      "architecture": [
+        [
+          {
+            "label": "React + React Router + React Query",
+            "sub": "Front end"
+          }
+        ],
+        [
+          {
+            "label": "Django REST Framework + JWT",
+            "sub": "REST API"
+          }
+        ],
+        [
+          {
+            "label": "Django ORM + Serializers",
+            "sub": "Data modelling"
+          },
+          {
+            "label": "WeasyPrint",
+            "sub": "PDF export"
+          }
+        ],
+        [
+          {
+            "label": "PostgreSQL 15",
+            "sub": "Database"
+          }
+        ]
+      ],
+      "keyFigures": [
+        {
+          "value": "48",
+          "label": "API endpoints"
+        },
+        {
+          "value": "6",
+          "label": "Modules"
+        },
+        {
+          "value": "PDF",
+          "label": "Quote exports"
+        },
+        {
+          "value": "4",
+          "label": "Sprints"
+        }
+      ]
+    },
+    {
+      "slug": "finol",
+      "title": "Finol",
+      "subtitle": "Exploring COBOL in a modern stack",
+      "description": "A personal project built to explore COBOL in a practical setting. A COBOL program performs financial calculations — loans, insurance contributions, interest and penalties — and is called from a Spring Boot API through ProcessBuilder. A React interface drives the complete workflow.",
+      "problems": "COBOL remains widespread in banking and insurance, yet few resources show how it integrates with a modern stack. The aim was to work directly with the language’s distinctive syntax — divisions, PIC typing, strict variable declarations and compile-time fixed memory — and understand COBOL as a business-calculation engine decoupled from the application layer.",
+      "context": "An independent exploratory project. The parallel with a real mainframe environment is explicit: PostgreSQL stands in for DB2 and ProcessBuilder for a CICS call, while the COBOL business logic remains identical.",
+      "role": "Sole developer, from design through deployment",
+      "highlights": [
+        "Learned COBOL concepts including divisions, PIC typing, EVALUATE and named paragraphs",
+        "Built a Java-to-COBOL bridge with ProcessBuilder, passing parameters through stdin and reading results from stdout",
+        "Implemented four financial calculations: loan repayments, insurance contributions, compound interest and late-payment penalties",
+        "Secured the Spring Boot REST API with JWT",
+        "Created a multi-stage Dockerfile that compiles the COBOL binary and builds the Spring Boot JAR in one image",
+        "Built a React interface for creating operations and triggering calculations"
+      ],
+      "technologies": [
+        "GnuCOBOL",
+        "Java 21",
+        "Spring Boot",
+        "Spring Security",
+        "JWT",
+        "PostgreSQL",
+        "Docker",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "images": [
+        {
+          "src": "/images/finol/finol1.png",
+          "alt": "Finol React interface showing a calculation form and its result"
+        },
+        {
+          "src": "/images/finol/finol2.png",
+          "alt": "Finol React interface showing a calculation form and its result"
+        },
+        {
+          "src": "/images/finol/finol3.png",
+          "alt": "Finol React interface showing a calculation form and its result"
+        },
+        {
+          "src": "/images/finol/finol4.png",
+          "alt": "Finol React interface showing a calculation form and its result"
+        },
+        {
+          "src": "/images/finol/finol5.png",
+          "alt": "Finol React interface showing a calculation form and its result"
+        }
+      ],
+      "codeImages": [
+        {
+          "src": "/images/finol/finolCode0.png",
+          "alt": "Finol COBOL source code"
+        },
+        {
+          "src": "/images/finol/finolCode1.png",
+          "alt": "Finol Java code calling ProcessBuilder"
+        },
+        {
+          "src": "/images/finol/finolCode2.png",
+          "alt": "Finol multi-stage Dockerfile"
+        }
+      ],
+      "type": "pro",
+      "confidential": false,
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/MartinChrrr/finol"
+        }
+      ],
+      "architecture": [
+        [
+          {
+            "label": "React + Vite",
+            "sub": "Front end"
+          }
+        ],
+        [
+          {
+            "label": "Spring Boot + JWT",
+            "sub": "REST API"
+          }
+        ],
+        [
+          {
+            "label": "CobolService",
+            "sub": "ProcessBuilder bridge"
+          }
+        ],
+        [
+          {
+            "label": "GnuCOBOL",
+            "sub": "Calculation engine"
+          }
+        ],
+        [
+          {
+            "label": "PostgreSQL",
+            "sub": "Data (DB2 in production)"
+          }
+        ]
+      ],
+      "keyFigures": [
+        {
+          "value": "4",
+          "label": "COBOL calculations"
+        },
+        {
+          "value": "13",
+          "label": "REST endpoints"
+        },
+        {
+          "value": "DB2",
+          "label": "Mainframe parallel"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Section } from "@/app/_components/Section";
 import { Spacing } from "@/app/_components/Spacing";
@@ -17,6 +18,8 @@ import {
 import type { Project } from "@/app/_data/projects";
 
 export const EcoleProjectPage = ({ project }: { project: Project }) => {
+  const t = useTranslations("ProjectPage");
+
   return (
     <>
       <Spacing size="sm" />
@@ -26,7 +29,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors w-fit"
         >
           <ArrowLeft className="h-4 w-4" />
-          Retour
+          {t("back")}
         </Link>
 
         {/* Header */}
@@ -43,7 +46,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
         {/* Description block with accent left border */}
         <div className="border-l-2 border-primary/60 bg-card/50 rounded-r-xl pl-5 pr-6 py-5">
           <p className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
-            Description
+            {t("description")}
           </p>
           <p className="text-card-foreground leading-relaxed">
             {project.description}
@@ -54,7 +57,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
         {project.context && (
           <div className="border-l-2 border-primary/60 bg-card/50 rounded-r-xl pl-5 pr-6 py-5">
             <p className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
-              Contexte
+              {t("context")}
             </p>
             <p className="text-card-foreground leading-relaxed">
               {project.context}
@@ -68,7 +71,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
             {project.problems && (
               <Card className="p-6">
                 <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
-                  Problématique
+                  {t("problem")}
                 </h3>
                 <p className="leading-relaxed">{project.problems}</p>
               </Card>
@@ -77,7 +80,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
             {project.role && (
               <Card className="p-6">
                 <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-2">
-                  Rôle
+                  {t("role")}
                 </h3>
                 <p className="leading-relaxed">{project.role}</p>
               </Card>
@@ -88,7 +91,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
             {project.technologies.length > 0 && (
               <Card className="p-6 h-full">
                 <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-3">
-                  Stack
+                  {t("stack")}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, index) => (
@@ -104,7 +107,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
         {project.highlights.length > 0 && (
           <div>
             <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
-              Points clés
+              {t("highlights")}
             </h3>
             <div className="flex flex-col">
               {project.highlights.map((highlight, index) => (
@@ -128,7 +131,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
         {project.images.length > 0 && (
           <div>
             <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
-              Screenshots
+              {t("screenshots")}
             </h3>
             <Card className="p-6">
               <Carousel opts={{ loop: true }} className="mx-12">
@@ -154,7 +157,7 @@ export const EcoleProjectPage = ({ project }: { project: Project }) => {
         {project.codeImages && project.codeImages.length > 0 && (
           <div>
             <h3 className="text-base font-semibold uppercase tracking-widest text-primary mb-5">
-              Code
+              {t("code")}
             </h3>
             <Card className="p-6">
               <Carousel opts={{ loop: true }} className="mx-12">
