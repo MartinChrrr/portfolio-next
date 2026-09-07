@@ -11,9 +11,9 @@ return (
     <Section classname="flex max-lg:flex-col items-start gap-4 scroll-mt-20" id="about">
         <div className="flex-[3] w-full flex flex-col gap-2">
             {/* <h2 className="font-caption text-4xl text-glow font-bold text-white">Martin Charrier</h2> */}
-            <h2 className="font-caption text-3xl text-glow text-white">Concepteur Développeur d'Applications</h2>
+            <h2 className="font-caption text-3xl text-glow text-white">Concepteur Développeur d&apos;Applications</h2>
             <p className="text-justify">
-                Développeur fullstack et C# en alternance : applications web et XR conçues et livrées en production, de l'API à la mise en prod.
+                Développeur fullstack et C# en alternance : applications web et XR conçues et livrées en production, de l&apos;API à la mise en prod.
                 <br/>Stack principale : React, Next.js, Node.js, PHP, C#, Java, Python, PostgreSQL, Neo4j.
                 <br/>
 
