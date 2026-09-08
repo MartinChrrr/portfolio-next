@@ -1,34 +1,32 @@
-import { ComponentPropsWithoutRef } from "react"
-import { Section } from "./Section"
-import { Card } from "@/components/ui/card"
-const Code = ({className, ...props}: ComponentPropsWithoutRef<"span">) => {
-    return <span className={`bg-accent/30 hover:bg-accent/50 border border-accent rounded-sm text-primary p-1  ,${className}`} {...props}/>
-
-}
+import { useTranslations } from "next-intl";
+import { Section } from "./Section";
 
 export const Presentation = () => {
-return (
-    <Section classname="flex max-lg:flex-col items-start gap-4 scroll-mt-20" id="about">
-        <div className="flex-[3] w-full flex flex-col gap-2">
-            {/* <h2 className="font-caption text-4xl text-glow font-bold text-white">Martin Charrier</h2> */}
-            <h2 className="font-caption text-3xl text-glow text-white">Concepteur Développeur d&apos;Applications</h2>
-            <p className="text-justify">
-                Développeur fullstack et C# en alternance : applications web et XR conçues et livrées en production, de l&apos;API à la mise en prod.
-                <br/>Stack principale : React, Next.js, Node.js, PHP, C#, Java, Python, PostgreSQL, Neo4j.
-                <br/>
+  const t = useTranslations("Home.presentation");
 
-            </p>
-        </div>
-       
-        <div className="flex-[2]">
-            {/* <img src="/images/myphoto.png"  */}
-            <img src="/images/CHARRIER_Martin.jpg" 
-            className="w-1/2 m-auto h-auto max-w-sm rounded-full " 
-             alt="photo de Martin Charrier"  />
-        </div>
+  return (
+    <Section
+      classname="flex max-lg:flex-col items-start gap-4 scroll-mt-20"
+      id="about"
+    >
+      <div className="flex-[3] w-full flex flex-col gap-2">
+        <h2 className="font-caption text-3xl text-glow text-white">
+          {t("title")}
+        </h2>
+        <p className="text-justify">
+          {t("intro")}
+          <br />
+          {t("stack")}
+        </p>
+      </div>
 
-
-
+      <div className="flex-[2]">
+        <img
+          src="/images/CHARRIER_Martin.jpg"
+          className="w-1/2 m-auto h-auto max-w-sm rounded-full"
+          alt={t("portraitAlt")}
+        />
+      </div>
     </Section>
-)
-}
+  );
+};
