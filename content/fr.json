@@ -176,12 +176,11 @@
       "Java",
       "TypeScript",
       "Python",
-      "C++",
       "C#"
     ],
     "frameworks": [
       "Spring",
-      "Vue",
+      "React",
       "Unity",
       "Tailwind",
       "Django",
