@@ -36,3 +36,49 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 Hello Martin
+
+
+
+---
+
+ > Version française
+
+Ceci est un projet [Next.js](https://nextjs.org) amorcé avec [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Mis en route
+
+Commencez par lancer le serveur de développement:
+
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+# ou
+bun dev
+```
+
+Ouvrez [http://localhost:3000](http://localhost:3000) avec votre navigateur pour voir la page web.
+
+Vous pouvez commencez à éditer la page en modifiant `app/page.tsx`. La page se met à jour automatiquement au fur et à mesure que vous éditez et sauvegardez le fichier.
+
+Ce projet utilise [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) pour automatiquement optimiser et charger [Geist](https://vercel.com/font), une nouvelle famille de police pour Vercel.
+
+
+## pour approfondir
+
+Pour en savoir plus sur Next.js, voici des ressources supplémentaires (en anglais seulement):
+
+- [Next.js Documentation](https://nextjs.org/docs) - Découvrir les fonctionnalités et l'API de Next.js.
+- [Learn Next.js](https://nextjs.org/learn) - un tutoriel interactif pour Next.js.
+
+Vous pouvez aller voir le [répertoire GitHub de Next.js (en anglais)](https://github.com/vercel/next.js) - Vos retours et contributions sont les bienvenues!
+
+## Déployement sur Vercel
+
+La façon la plus facile de déployer votre application Next.js est de profiter de la [Platforme Vercel (en anglais)](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) par les créateurs de Next.js.
+
+Pour plus de détails, référez-vous à la [documentation de déployement Next.js (en anglais)](https://nextjs.org/docs/app/building-your-application/deploying).
+
+###### you're welcome
